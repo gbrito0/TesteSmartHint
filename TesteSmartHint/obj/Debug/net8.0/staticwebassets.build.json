@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rkNYOJCqRkYBSYtFaUw7SJFNiqKG76m2pjByN9Rr3Yg=",
+  "Source": "TesteSmartHint.API",
+  "BasePath": "_content/TesteSmartHint.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

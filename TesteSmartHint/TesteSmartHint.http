@@ -1,0 +1,6 @@
+@TesteSmartHint_HostAddress = http://localhost:5253
+
+GET {{TesteSmartHint_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

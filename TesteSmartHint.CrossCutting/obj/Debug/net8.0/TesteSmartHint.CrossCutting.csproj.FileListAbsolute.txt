@@ -1,0 +1,11 @@
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.CrossCutting.deps.json
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.CrossCutting.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.CrossCutting.pdb
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.AssemblyInfo.cs
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\refint\TesteSmartHint.CrossCutting.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.pdb
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\ref\TesteSmartHint.CrossCutting.dll
