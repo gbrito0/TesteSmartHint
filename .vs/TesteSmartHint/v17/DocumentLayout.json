@@ -70,8 +70,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -82,8 +86,7 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAqwCoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T21:03:57.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T21:03:57.537Z"
             },
             {
               "$type": "Document",
@@ -95,8 +98,7 @@
               "RelativeToolTip": "TesteSmartHint\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:53:42.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:53:42.114Z"
             },
             {
               "$type": "Document",
@@ -108,8 +110,7 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Context\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:49:06.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:49:06.97Z"
             },
             {
               "$type": "Document",
@@ -121,8 +122,7 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:47:38.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:47:38.75Z"
             },
             {
               "$type": "Document",
@@ -134,8 +134,7 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAxwBoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:47:29.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:47:29.637Z"
             },
             {
               "$type": "Document",
@@ -160,8 +159,7 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:28:09.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:28:09.408Z"
             },
             {
               "$type": "Document",
@@ -173,8 +171,7 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:27:52.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:27:52.227Z"
             },
             {
               "$type": "Document",
@@ -186,8 +183,7 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:27:37.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:27:37.409Z"
             },
             {
               "$type": "Document",
@@ -199,8 +195,7 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\PessoaJuridica.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:55.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:56:55.066Z"
             },
             {
               "$type": "Document",
@@ -212,8 +207,7 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\PessoaFisica.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:47.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:56:47.333Z"
             },
             {
               "$type": "Document",
@@ -225,47 +219,43 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:41.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:56:41.864Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "TesteSmartHint.Domain",
+              "Title": "TesteSmartHint.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "RelativeToolTip": "TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:42:23.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:42:23.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "TesteSmartHint.Infrastructure",
+              "Title": "TesteSmartHint.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "RelativeToolTip": "TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:41:52.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:41:52.649Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "TesteSmartHint.Application",
+              "Title": "TesteSmartHint.Application.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "RelativeToolTip": "TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:41:22.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:41:22.496Z"
             }
           ]
         }
