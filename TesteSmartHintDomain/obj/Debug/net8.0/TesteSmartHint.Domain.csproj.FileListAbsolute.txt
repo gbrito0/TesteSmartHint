@@ -9,3 +9,4 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\refint\TesteSmartHint.Domain.dll
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\ref\TesteSmartHint.Domain.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.sourcelink.json

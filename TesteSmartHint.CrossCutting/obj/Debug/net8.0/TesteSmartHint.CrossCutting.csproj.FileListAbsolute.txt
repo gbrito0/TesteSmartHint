@@ -9,3 +9,12 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\refint\TesteSmartHint.CrossCutting.dll
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\ref\TesteSmartHint.CrossCutting.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Application.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Domain.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Infrastructure.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Application.pdb
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Domain.pdb
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\bin\Debug\net8.0\TesteSmartHint.Infrastructure.pdb
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSmartHint.CrossCutting.sourcelink.json
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint.CrossCutting\obj\Debug\net8.0\TesteSma.5C4485C1.Up2Date

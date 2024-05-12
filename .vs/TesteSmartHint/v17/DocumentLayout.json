@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthintdomain\\entities\\filtro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\entities\\filtro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA6BCC2-68E7-4D6A-B205-6F188946829F}|TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint.crosscutting\\ioc\\dependencyinjectionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA6BCC2-68E7-4D6A-B205-6F188946829F}|TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj|solutionrelative:testesmarthint.crosscutting\\ioc\\dependencyinjectionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA6BCC2-68E7-4D6A-B205-6F188946829F}|TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint.crosscutting\\testesmarthint.crosscutting.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AA6BCC2-68E7-4D6A-B205-6F188946829F}|TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj|solutionrelative:testesmarthint.crosscutting\\testesmarthint.crosscutting.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthintdomain\\entities\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\testesmarthint.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\users\\gui_3\\source\\repos\\testesmarthint\\testesmarthintapplication\\testesmarthint.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\testesmarthint.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -70,15 +82,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\appsettings.json",
+              "RelativeDocumentMoniker": "TesteSmartHint\\appsettings.json",
+              "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\appsettings.json",
+              "RelativeToolTip": "TesteSmartHint\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-12T21:56:21.308Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TesteSmartHint\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TesteSmartHint\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-12T21:56:12.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjectionAPI.cs",
+              "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\IoC\\DependencyInjectionAPI.cs",
+              "RelativeDocumentMoniker": "TesteSmartHint.CrossCutting\\IoC\\DependencyInjectionAPI.cs",
+              "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\IoC\\DependencyInjectionAPI.cs",
+              "RelativeToolTip": "TesteSmartHint.CrossCutting\\IoC\\DependencyInjectionAPI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T21:50:26.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TesteSmartHint.CrossCutting",
+              "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+              "RelativeDocumentMoniker": "TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+              "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+              "RelativeToolTip": "TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-12T21:47:46.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PessoaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
@@ -86,23 +146,25 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAqwCoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T21:03:57.537Z"
+              "WhenOpened": "2024-05-12T21:03:57.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\Program.cs",
               "RelativeDocumentMoniker": "TesteSmartHint\\Program.cs",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint\\Program.cs",
               "RelativeToolTip": "TesteSmartHint\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:53:42.114Z"
+              "WhenOpened": "2024-05-12T19:53:42.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Context\\ApplicationDbContext.cs",
@@ -110,23 +172,25 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Context\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:49:06.97Z"
+              "WhenOpened": "2024-05-12T19:49:06.97Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PessoaJuridicaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAABNAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwCAAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:47:38.75Z"
+              "WhenOpened": "2024-05-12T19:47:38.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "PessoaFisicaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
@@ -134,24 +198,12 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAxwBoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:47:29.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Filtro.cs",
-              "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Filtro.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintDomain\\Entities\\Filtro.cs",
-              "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Filtro.cs",
-              "RelativeToolTip": "TesteSmartHintDomain\\Entities\\Filtro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:36:11.589Z",
+              "WhenOpened": "2024-05-12T19:47:29.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "IPessoaJuridicaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
@@ -159,11 +211,12 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:28:09.408Z"
+              "WhenOpened": "2024-05-12T19:28:09.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IPessoaFisicaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
@@ -171,11 +224,12 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:27:52.227Z"
+              "WhenOpened": "2024-05-12T19:27:52.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "IPessoaRepository.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
@@ -183,11 +237,12 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:27:37.409Z"
+              "WhenOpened": "2024-05-12T19:27:37.409Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PessoaJuridica.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\PessoaJuridica.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Entities\\PessoaJuridica.cs",
@@ -195,11 +250,12 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\PessoaJuridica.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:55.066Z"
+              "WhenOpened": "2024-05-12T18:56:55.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PessoaFisica.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\PessoaFisica.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Entities\\PessoaFisica.cs",
@@ -207,23 +263,25 @@
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\PessoaFisica.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:47.333Z"
+              "WhenOpened": "2024-05-12T18:56:47.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Pessoa.cs",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "ToolTip": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\Pessoa.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAAAFAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAIBJwBwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:56:41.864Z"
+              "WhenOpened": "2024-05-12T18:56:41.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "TesteSmartHint.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
@@ -231,11 +289,12 @@
               "RelativeToolTip": "TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:42:23.668Z"
+              "WhenOpened": "2024-05-12T18:42:23.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "TesteSmartHint.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
@@ -243,11 +302,12 @@
               "RelativeToolTip": "TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:41:52.649Z"
+              "WhenOpened": "2024-05-12T18:41:52.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "TesteSmartHint.Application.csproj",
               "DocumentMoniker": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "RelativeDocumentMoniker": "TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
@@ -255,7 +315,8 @@
               "RelativeToolTip": "TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-12T18:41:22.496Z"
+              "WhenOpened": "2024-05-12T18:41:22.496Z",
+              "EditorCaption": ""
             }
           ]
         }

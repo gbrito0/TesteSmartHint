@@ -30,3 +30,4 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint\obj\Debug\net8.0\refin
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint\obj\Debug\net8.0\TesteSmartHint.API.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint\obj\Debug\net8.0\TesteSmartHint.API.genruntimeconfig.cache
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint\obj\Debug\net8.0\ref\TesteSmartHint.API.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHint\obj\Debug\net8.0\TesteSmartHint.API.sourcelink.json

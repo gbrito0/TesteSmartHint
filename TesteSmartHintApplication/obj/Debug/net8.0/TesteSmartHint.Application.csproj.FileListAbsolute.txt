@@ -13,3 +13,4 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintApplication\obj\Debug\n
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintApplication\obj\Debug\net8.0\refint\TesteSmartHint.Application.dll
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintApplication\obj\Debug\net8.0\TesteSmartHint.Application.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintApplication\obj\Debug\net8.0\ref\TesteSmartHint.Application.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintApplication\obj\Debug\net8.0\TesteSmartHint.Application.sourcelink.json

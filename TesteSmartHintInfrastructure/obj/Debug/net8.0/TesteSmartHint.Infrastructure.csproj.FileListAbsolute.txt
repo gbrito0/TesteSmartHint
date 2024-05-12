@@ -15,3 +15,4 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintInfrastructure\obj\Debu
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintInfrastructure\obj\Debug\net8.0\TesteSmartHint.Infrastructure.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintInfrastructure\obj\Debug\net8.0\TesteSmartHint.Infrastructure.genruntimeconfig.cache
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintInfrastructure\obj\Debug\net8.0\ref\TesteSmartHint.Infrastructure.dll
+C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintInfrastructure\obj\Debug\net8.0\TesteSmartHint.Infrastructure.sourcelink.json

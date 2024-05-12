@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteSmartHintApplication\TesteSmartHint.Application.csproj" />
+    <ProjectReference Include="..\TesteSmartHintDomain\TesteSmartHint.Domain.csproj" />
+    <ProjectReference Include="..\TesteSmartHintInfrastructure\TesteSmartHint.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
