@@ -10,7 +10,9 @@ namespace TesteSmartHint.Application.Interfaces
     public interface IPessoaJuridicaService
     {
         Task<IEnumerable<PessoaJuridica>> GetAll();
-        Task<PessoaJuridica> GetPessoaJuridicaAsync(int id);
+        Task<PessoaJuridica> GetPessoaJuridicaById(int id);
         Task<PessoaJuridica> Add(PessoaJuridica pessoaJuridica);
+        Task<PessoaJuridica> Update(PessoaJuridica pessoaJuridica);
+        Task Delete(int id);
     }
 }

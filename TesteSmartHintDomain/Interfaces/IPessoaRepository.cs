@@ -12,8 +12,8 @@ namespace TesteSmartHint.Domain.Interfaces
         public Task<T> GetById(int id);
         Task<IEnumerable<T>> GetAll();
         Task<T> Add(T entity);
-        Task<int> Update(T entity);
-        Task<int> Delete(int id);
+        Task<T> Update(T entity);
+        Task Delete(int id);
         Task<bool> validaEmail(string CPF);
     }
 }

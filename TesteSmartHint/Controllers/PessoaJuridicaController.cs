@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TesteSmartHint.Application.Interfaces;
+using TesteSmartHint.Application.Services;
 using TesteSmartHint.Domain.Entities;
 
 namespace TesteSmartHint.API.Controllers
@@ -10,10 +11,12 @@ namespace TesteSmartHint.API.Controllers
     public class PessoaJuridicaController : ControllerBase
     {
         private readonly IPessoaJuridicaService _pessoaJuridicaService;
+        private readonly IPessoaService _pessoaService;
 
-        public PessoaJuridicaController(IPessoaJuridicaService pessoaJuridicaService)
+        public PessoaJuridicaController(IPessoaJuridicaService pessoaJuridicaService, IPessoaService pessoaService)
         {
             _pessoaJuridicaService = pessoaJuridicaService;
+            _pessoaService = pessoaService;
         }
 
         [HttpGet]
@@ -28,7 +31,7 @@ namespace TesteSmartHint.API.Controllers
         {
             try
             {
-                var pessoa = await _pessoaJuridicaService.GetPessoaJuridicaAsync(id);
+                var pessoa = await _pessoaJuridicaService.GetPessoaJuridicaById(id);
                 if (pessoa == null)
                     return NotFound();
                 else
@@ -53,6 +56,32 @@ namespace TesteSmartHint.API.Controllers
             {
                 return StatusCode(500, ex.Message);
             }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<PessoaJuridica>> Put(int id, [FromBody] PessoaJuridica pessoaJuridica)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            if (id != pessoaJuridica.Id)
+            {
+                ModelState.AddModelError("ErrorMessage", "Id inválido");
+                return BadRequest(ModelState);
+            }
+
+            await _pessoaJuridicaService.Update(pessoaJuridica);
+            await _pessoaService.Update(pessoaJuridica);
+            
+            return Ok(pessoaJuridica);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+
+            await _pessoaJuridicaService.Delete(id);
+            return Ok();
         }
     }
 }

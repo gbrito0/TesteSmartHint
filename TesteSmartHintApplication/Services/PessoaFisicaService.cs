@@ -42,9 +42,19 @@ namespace TesteSmartHint.Application.Services
             catch (Exception ex) { throw ex; }
         }
 
-        public async Task<PessoaFisica> GetPessoaFisicaAsync(int id)
+        public async Task<PessoaFisica> GetPessoaFisicaById(int id)
         {
             return await _pessoaFisicaRepository.GetById(id);
+        }
+
+        public async Task<PessoaFisica> Update(PessoaFisica pessoa)
+        {
+            return await _pessoaFisicaRepository.Update(pessoa);
+        }
+
+        public async Task Delete(int id)
+        {            
+            await _pessoaFisicaRepository.Delete(id);
         }
     }
 }

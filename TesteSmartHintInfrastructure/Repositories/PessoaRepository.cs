@@ -60,7 +60,6 @@ namespace TesteSmartHint.Infrastructure.Repositories
             parameters.Add("Bloqueado", pessoa.Bloqueado == true ? 1 : 0, DbType.Boolean);
             parameters.Add("InscricaoEstadual", pessoa.InscricaoEstadual, DbType.Int64);
 
-
             using (var connection = _context.CreateConnection())
             {
                 var retorno = await connection.QueryAsync<int>(sql, parameters);
@@ -69,15 +68,28 @@ namespace TesteSmartHint.Infrastructure.Repositories
             }
         }
 
-        public Task<int> Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"DELETE FROM Pessoa WHERE ID = {0}", id);
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.QueryAsync(query);
+            }
         }
 
 
-        public Task<int> Update(Pessoa entity)
+        public async Task<Pessoa> Update(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"  
+                            UPDATE Pessoa SET
+                            Nome = '{1}', Email = '{2}', Telefone = '{3}', Bloqueado = {4}
+                            WHERE ID = {0}",
+                            pessoa.Id, pessoa.Nome, pessoa.Email, pessoa.Telefone, pessoa.Bloqueado);
+            using (var connection = _context.CreateConnection())
+            {
+                var pf = await connection.QueryFirstOrDefaultAsync<PessoaFisica>(query);
+                return pessoa;
+            }
         }
 
         public Task<bool> validaEmail(string CPF)

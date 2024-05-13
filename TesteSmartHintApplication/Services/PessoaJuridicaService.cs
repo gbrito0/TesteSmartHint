@@ -32,7 +32,7 @@ namespace TesteSmartHint.Application.Services
             catch (Exception ex) { throw ex; }
         }
 
-        public async Task<PessoaJuridica> GetPessoaJuridicaAsync(int id)
+        public async Task<PessoaJuridica> GetPessoaJuridicaById(int id)
         {
             return await _pessoaJuridicaRepository.GetById(id);
         }
@@ -45,6 +45,16 @@ namespace TesteSmartHint.Application.Services
             }
             catch (Exception ex) { }
             throw new NotImplementedException();
+        }
+
+        public async Task<PessoaJuridica> Update(PessoaJuridica pessoaJuridica)
+        {
+            return await _pessoaJuridicaRepository.Update(pessoaJuridica);
+        }
+
+        public async Task Delete(int id)
+        {
+            await _pessoaJuridicaRepository.Delete(id);
         }
     }
 }

@@ -73,19 +73,38 @@ namespace TesteSmartHint.Infrastructure.Repositories
         }
 
 
-        public Task<int> Update(PessoaJuridica entity)
+        public async Task<PessoaJuridica> Update(PessoaJuridica pessoaJuridica)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"  
+                            UPDATE PessoaJuridica SET
+                            CNPJ = '{1}'
+                            WHERE ID = {0}",
+                            pessoaJuridica.Id, pessoaJuridica.CNPJ);
+            using (var connection = _context.CreateConnection())
+            {
+                var pf = await connection.QueryFirstOrDefaultAsync<PessoaJuridica>(query);
+                return pessoaJuridica;
+            }
         }
 
-        public Task<int> Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"DELETE FROM PessoaJuridica WHERE ID = {0}", id);
+            using (var connection = _context.CreateConnection())
+            {                
+                await connection.QueryAsync(query); 
+            }
         }
 
-        public Task<bool> validaCNPJ(string CNPJ)
+        public async Task<bool> validaCNPJ(string CNPJ)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"SELECT true FROM PessoaJuridica WHERE CNPJ = {0}", CNPJ);
+            using (var connection = _context.CreateConnection())
+            {
+                var cnpjExistente = await connection.QueryFirstOrDefault(query);
+                return cnpjExistente;
+            }
+
         }
 
         public Task<bool> validaEmail(string CPF)

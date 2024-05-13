@@ -11,10 +11,12 @@ namespace TesteSmartHint.API.Controllers
     public class PessoaFisicaController : ControllerBase
     {
         private readonly IPessoaFisicaService _pessoaFisicaService;
+        private readonly IPessoaService _pessoaService;
 
-        public PessoaFisicaController(IPessoaFisicaService pessoaFisicaService)
+        public PessoaFisicaController(IPessoaFisicaService pessoaFisicaService, IPessoaService pessoaService)
         {
             _pessoaFisicaService = pessoaFisicaService;
+            _pessoaService = pessoaService;
         }
 
         [HttpGet]
@@ -29,7 +31,7 @@ namespace TesteSmartHint.API.Controllers
         {
             try
             {
-                var pessoa = await _pessoaFisicaService.GetPessoaFisicaAsync(id);
+                var pessoa = await _pessoaFisicaService.GetPessoaFisicaById(id);
                 if (pessoa == null)
                     return NotFound();
                 else
@@ -46,7 +48,7 @@ namespace TesteSmartHint.API.Controllers
                 return BadRequest(ModelState);
 
             try
-            {
+            {                
                 await _pessoaFisicaService.Add(pessoaFisica);
                 return Ok(pessoaFisica);
             }
@@ -54,6 +56,30 @@ namespace TesteSmartHint.API.Controllers
             {
                 return StatusCode(500, ex.Message);
             }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<PessoaFisica>> Put(int id, [FromBody] PessoaFisica pessoaFisica)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+            if (id != pessoaFisica.Id)
+            {
+                ModelState.AddModelError("ErrorMessage", "Id inválido");
+                return BadRequest(ModelState);
+            }
+                                     
+            await _pessoaFisicaService.Update(pessoaFisica);
+            await _pessoaService.Update(pessoaFisica);
+
+            return Ok(pessoaFisica);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await _pessoaFisicaService.Delete(id);
+            return Ok();
         }
     }
 }

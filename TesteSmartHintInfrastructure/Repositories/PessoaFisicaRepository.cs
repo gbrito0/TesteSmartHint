@@ -56,7 +56,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
             parameters.Add("ID", pessoaFisica.Id, DbType.Int64);
             parameters.Add("CPF", pessoaFisica.CPF, DbType.String);
             parameters.Add("Genero", pessoaFisica.Genero, DbType.String);
-            parameters.Add("dtNascimento", pessoaFisica.dtNascimento, DbType.Date);            
+            parameters.Add("dtNascimento", pessoaFisica.dtNascimento, DbType.Date);
 
 
             using (var connection = _context.CreateConnection())
@@ -69,17 +69,30 @@ namespace TesteSmartHint.Infrastructure.Repositories
                 catch (Exception ex)
                 {
                     throw ex;
-                }                
+                }
             }
         }
 
-        public Task<int> Update(PessoaFisica pessoaFisica)
+        public async Task<PessoaFisica> Update(PessoaFisica pessoaFisica)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"  
+                            UPDATE PessoaFisica SET
+                            CPF = '{1}', Genero = '{2}', dtNascimento = '{3}'
+                            WHERE ID = {0}",
+                            pessoaFisica.Id, pessoaFisica.CPF, pessoaFisica.Genero, pessoaFisica.dtNascimento.ToString("yyyy-MM-dd"));
+            using (var connection = _context.CreateConnection())
+            {
+                var pf = await connection.QueryFirstOrDefaultAsync<PessoaFisica>(query);
+                return pessoaFisica;
+            }
         }
-        public Task<int> Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"DELETE FROM PessoaFisica pf WHERE pf.ID = {0}", id);
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.QueryAsync(query);
+            }
         }
 
         public Task<bool> validaCPF(string CPF)

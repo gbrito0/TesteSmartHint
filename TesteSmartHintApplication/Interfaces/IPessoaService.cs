@@ -12,5 +12,7 @@ namespace TesteSmartHint.Application.Interfaces
         Task<IEnumerable<Pessoa>> GetAll();
         Task<Pessoa> GetPessoaAsync(int id);
         Task<Pessoa> Add(Pessoa pessoa);
+        Task<Pessoa> Update(Pessoa pessoa);
+        Task Delete(int id);
     }
 }

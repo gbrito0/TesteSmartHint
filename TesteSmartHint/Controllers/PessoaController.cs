@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TesteSmartHint.Application.Interfaces;
+using TesteSmartHint.Application.Services;
 using TesteSmartHint.Domain.Entities;
 
 namespace TesteSmartHint.API.Controllers
@@ -51,9 +52,31 @@ namespace TesteSmartHint.API.Controllers
             }catch(Exception ex)
             {
                 return StatusCode(500, ex.Message); 
-            }
-            
-            
+            }            
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await _pessoaService.Delete(id);
+            return Ok();
+        }
+
+        //[HttpPut("{id}")]
+        //public async Task<ActionResult<Pessoa>> Put(int id, [FromBody] Pessoa pessoa)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return BadRequest();
+        //    if (id != pessoa.Id)
+        //    {
+        //        ModelState.AddModelError("ErrorMessage", "Id inválido");
+        //        return BadRequest(ModelState);
+        //    }
+
+        //    await _pessoaService.Update(pessoa);
+
+        //    return Ok(pessoa);
+        //}
+
     }
 }
