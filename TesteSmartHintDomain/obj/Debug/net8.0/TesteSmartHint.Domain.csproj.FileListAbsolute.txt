@@ -10,3 +10,15 @@ C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.pdb
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\ref\TesteSmartHint.Domain.dll
 C:\Users\gui_3\source\repos\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.sourcelink.json
+C:\git\TesteSmartHint\TesteSmartHintDomain\bin\Debug\net8.0\TesteSmartHint.Domain.deps.json
+C:\git\TesteSmartHint\TesteSmartHintDomain\bin\Debug\net8.0\TesteSmartHint.Domain.dll
+C:\git\TesteSmartHint\TesteSmartHintDomain\bin\Debug\net8.0\TesteSmartHint.Domain.pdb
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.AssemblyInfoInputs.cache
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.AssemblyInfo.cs
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.csproj.CoreCompileInputs.cache
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.sourcelink.json
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.dll
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\refint\TesteSmartHint.Domain.dll
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\TesteSmartHint.Domain.pdb
+C:\git\TesteSmartHint\TesteSmartHintDomain\obj\Debug\net8.0\ref\TesteSmartHint.Domain.dll

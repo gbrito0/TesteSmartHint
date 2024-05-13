@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/cLYdyxGWCflsnmKWrIFhT3QY1TJVZVaEHhzRx4dXf/jCSkgX81sZDPmDQ8dcS4ln4fNkThlUeMqUmxy01Cd4A==",
+  "dgSpecHash": "eyxFPd+d0g4TKXITHnzfPiQ4CRHGFbLSJx+/gJAkVtf2HeED2WjwrNk09EITl8P9KHMceuPzbwFDwDMlvobYCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
+  "projectFilePath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

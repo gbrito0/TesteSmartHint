@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mSD3vvTfEF6o+CP+edKeZxUWKBw2O9f74WZhVpFuDEMnwo6QSRzxBKSMPNXyjH4PykZ3wDIhBN2QHo5JtrElQA==",
+  "dgSpecHash": "HqEXSndJrJH6mz8Ua1PN0X9ZJw5hNdsMUPQDUsrC4gLqUKJegSPGvHLSc/z4DC2IBCXNbA8HSNYGx/eE+D8g+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Guilherme\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Guilherme\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

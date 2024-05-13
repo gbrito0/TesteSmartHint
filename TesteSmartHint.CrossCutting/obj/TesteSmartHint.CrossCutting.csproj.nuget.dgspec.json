@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj": {}
+    "C:\\git\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj": {
+    "C:\\git\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+        "projectUniqueName": "C:\\git\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
         "projectName": "TesteSmartHint.CrossCutting",
-        "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\gui_3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHint.CrossCutting\\obj\\",
+        "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHint.CrossCutting\\TesteSmartHint.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\TesteSmartHint\\TesteSmartHint.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gui_3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj": {
-                "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj"
+              "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj": {
+                "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj"
               },
-              "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
-                "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
+              "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
+                "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
               },
-              "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj"
+              "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj": {
+                "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj"
               }
             }
           }
@@ -84,17 +84,17 @@
         }
       }
     },
-    "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj": {
+    "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
+        "projectUniqueName": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
         "projectName": "TesteSmartHint.Application",
-        "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
-        "packagesPath": "C:\\Users\\gui_3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintApplication\\obj\\",
+        "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\TesteSmartHint.Application.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gui_3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +108,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
-                "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
+              "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
+                "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
               }
             }
           }
@@ -128,6 +128,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -148,17 +154,17 @@
         }
       }
     },
-    "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
+    "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
+        "projectUniqueName": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
         "projectName": "TesteSmartHint.Domain",
-        "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
-        "packagesPath": "C:\\Users\\gui_3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\obj\\",
+        "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gui_3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -208,17 +214,17 @@
         }
       }
     },
-    "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj": {
+    "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
+        "projectUniqueName": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
         "projectName": "TesteSmartHint.Infrastructure",
-        "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\gui_3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintInfrastructure\\obj\\",
+        "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gui_3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -232,8 +238,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
-                "projectPath": "C:\\Users\\gui_3\\source\\repos\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
+              "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj": {
+                "projectPath": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\TesteSmartHint.Domain.csproj"
               }
             }
           }
@@ -268,6 +274,12 @@
               "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
             },
