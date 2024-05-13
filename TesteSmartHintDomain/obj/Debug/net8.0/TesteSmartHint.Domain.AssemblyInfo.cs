@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteSmartHint.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f1d76f863d0ad935cc4b103dfdea3e3444509bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbdf1ab3776e8a617532b8667e5ceb3ce5a36bd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteSmartHint.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteSmartHint.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

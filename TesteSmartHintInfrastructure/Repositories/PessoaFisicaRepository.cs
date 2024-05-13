@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using TesteSmartHint.Domain.Entities;
 using TesteSmartHint.Domain.Interfaces;
 using TesteSmartHint.Infrastructure.Context;
@@ -12,34 +11,25 @@ namespace TesteSmartHint.Infrastructure.Repositories
 {
     public class PessoaFisicaRepository : IPessoaFisicaRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly DapperContext _context;
 
-        public PessoaFisicaRepository(ApplicationDbContext context)
+        public PessoaFisicaRepository(DapperContext context)
         {
             _context = context;
         }
 
         public async Task<PessoaFisica> GetById(int id)
         {
-            try
-            {
-                return await _context.PessoaFisica.FindAsync(id);
-            }catch (Exception ex) { throw; }
-            
+            throw new NotImplementedException();
+
         }
         public async Task<IEnumerable<PessoaFisica>> GetAll()
         {
-            try
-            {
-                var lstPF = await _context.PessoaFisica.ToListAsync();
-                return lstPF;
-            }catch(Exception ex) { throw; } 
+            throw new NotImplementedException();
         }
         public async Task<PessoaFisica> Add(PessoaFisica entity)
         {
-            _context.Add(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+            throw new NotImplementedException();
         }
 
         public Task<int> Update(PessoaFisica entity)

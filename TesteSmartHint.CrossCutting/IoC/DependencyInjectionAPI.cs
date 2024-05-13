@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TesteSmartHint.Application.Interfaces;
@@ -20,15 +19,14 @@ namespace TesteSmartHint.CrossCutting.IoC
     {
         public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 29))));
+            services.AddSingleton<DapperContext>();
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             services.AddScoped<IPessoaRepository<Pessoa>, PessoaRepository>();
             services.AddScoped<IPessoaFisicaRepository, PessoaFisicaRepository>();
             services.AddScoped<IPessoaJuridicaRepository, PessoaJuridicaRepository>();
             services.AddScoped<IPessoaFisicaService, PessoaFisicaService>();
-
-            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+            services.AddScoped<IPessoaService, PessoaService>();
                         
             return services;
         }

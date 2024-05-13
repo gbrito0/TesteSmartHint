@@ -13,12 +13,12 @@ namespace TesteSmartHint.Domain.Entities
         }
 
 
-        protected PessoaJuridica(int id, string nome, string email, string telefone, DateTime dtCadastro, bool bloqueado, string CNPJ) 
-            : base(id, nome, email, telefone, dtCadastro, bloqueado)
+        public PessoaJuridica(int id, string nome, string email, string telefone, DateTime dtCadastro, bool bloqueado, int? inscricaoEstadual, string CNPJ) 
+            : base(id, nome, email, telefone, dtCadastro, bloqueado, inscricaoEstadual)
         {
             this.CNPJ = CNPJ;
         }
 
-        protected string CNPJ { get; set; }
+        public string CNPJ { get; set; }
     }
 }
