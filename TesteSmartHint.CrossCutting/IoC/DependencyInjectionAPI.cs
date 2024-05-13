@@ -23,10 +23,11 @@ namespace TesteSmartHint.CrossCutting.IoC
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             services.AddScoped<IPessoaRepository<Pessoa>, PessoaRepository>();
-            services.AddScoped<IPessoaFisicaRepository, PessoaFisicaRepository>();
-            services.AddScoped<IPessoaJuridicaRepository, PessoaJuridicaRepository>();
-            services.AddScoped<IPessoaFisicaService, PessoaFisicaService>();
             services.AddScoped<IPessoaService, PessoaService>();
+            services.AddScoped<IPessoaFisicaRepository, PessoaFisicaRepository>();
+            services.AddScoped<IPessoaFisicaService, PessoaFisicaService>();
+            services.AddScoped<IPessoaJuridicaRepository, PessoaJuridicaRepository>();                        
+            services.AddScoped<IPessoaJuridicaService, PessoaJuridicaService>();
                         
             return services;
         }

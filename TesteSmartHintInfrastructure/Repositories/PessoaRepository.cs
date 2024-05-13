@@ -49,7 +49,8 @@ namespace TesteSmartHint.Infrastructure.Repositories
                 @"INSERT INTO Pessoa
                         (Nome, Email, Telefone, dtCadastro, Bloqueado)
                 VALUES 
-                        (@Nome, @Email, @Telefone, @dtCadastro, @Bloqueado)";
+                        (@Nome, @Email, @Telefone, @dtCadastro, @Bloqueado);
+                SELECT LAST_INSERT_ID()";
 
             var parameters = new DynamicParameters();
             parameters.Add("Nome", pessoa.Nome, DbType.String);
@@ -62,7 +63,8 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
             using (var connection = _context.CreateConnection())
             {
-                var retorno = await connection.QueryAsync(sql, parameters);
+                var retorno = await connection.QueryAsync<int>(sql, parameters);
+                pessoa.Id = retorno.Single();
                 return pessoa;
             }
         }
@@ -74,6 +76,11 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
 
         public Task<int> Update(Pessoa entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> validaEmail(string CPF)
         {
             throw new NotImplementedException();
         }

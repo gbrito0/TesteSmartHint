@@ -14,7 +14,7 @@ namespace TesteSmartHint.Domain.Entities
         {
         }
 
-        protected Pessoa(int id, string nome, string email, string telefone, DateTime dtCadastro, bool bloqueado, int? inscricaoEstadual)
+        protected Pessoa(int id, string nome, string email, int telefone, DateTime dtCadastro, bool bloqueado, int? inscricaoEstadual)
         {
             Id = id;
             Nome = nome;
@@ -28,9 +28,9 @@ namespace TesteSmartHint.Domain.Entities
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
-        public string Telefone { get; set; }
+        public long Telefone { get; set; }
         public DateTime dtCadastro { get; set; }
         public bool Bloqueado { get; set; }
-        public int? InscricaoEstadual { get; set; }
+        public long? InscricaoEstadual { get; set; }
     }
 }

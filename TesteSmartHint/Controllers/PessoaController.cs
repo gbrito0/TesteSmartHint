@@ -23,7 +23,7 @@ namespace TesteSmartHint.API.Controllers
             return Ok(lstPessoaFisica);
         }
 
-        [HttpGet("{id}", Name = "GetById")]
+        [HttpGet("{id}", Name = "GetPessoaById")]
         public async Task<ActionResult<Pessoa>> GetById(int id)
         {
             try

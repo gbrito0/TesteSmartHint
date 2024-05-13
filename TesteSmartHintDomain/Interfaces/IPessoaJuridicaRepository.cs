@@ -9,5 +9,6 @@ namespace TesteSmartHint.Domain.Interfaces
 {
     public interface IPessoaJuridicaRepository : IPessoaRepository<PessoaJuridica>
     {
+        Task<bool> validaCNPJ(string CNPJ);
     }
 }

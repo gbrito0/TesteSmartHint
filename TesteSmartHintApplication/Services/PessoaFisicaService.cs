@@ -21,8 +21,13 @@ namespace TesteSmartHint.Application.Services
             _mapper = mapper;
         }
 
-        public Task Add(PessoaFisica pessoa)
+        public async Task<PessoaFisica> Add(PessoaFisica pessoaFisica)
         {
+            try
+            {
+                return await _pessoaFisicaRepository.Add(pessoaFisica);
+            }
+            catch (Exception ex) { }
             throw new NotImplementedException();
         }
 
@@ -33,12 +38,13 @@ namespace TesteSmartHint.Application.Services
                 var lstPessoaFisica = await _pessoaFisicaRepository.GetAll();
                 return lstPessoaFisica;
 
-            }catch (Exception ex) { throw ex; }
+            }
+            catch (Exception ex) { throw ex; }
         }
 
-        public Task<PessoaFisica> GetPessoaFisicaAsync(int id)
+        public async Task<PessoaFisica> GetPessoaFisicaAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _pessoaFisicaRepository.GetById(id);
         }
     }
 }
