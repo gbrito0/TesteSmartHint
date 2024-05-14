@@ -13,7 +13,30 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteSmartHint.Domain", "Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteSmartHint.Infrastructure", "TesteSmartHintInfrastructure\TesteSmartHint.Infrastructure.csproj", "{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteSmartHint.CrossCutting", "TesteSmartHint.CrossCutting\TesteSmartHint.CrossCutting.csproj", "{1AA6BCC2-68E7-4D6A-B205-6F188946829F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteSmartHint.CrossCutting", "TesteSmartHint.CrossCutting\TesteSmartHint.CrossCutting.csproj", "{1AA6BCC2-68E7-4D6A-B205-6F188946829F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForm", "WebForm", "{4C3A49CD-DF8B-4412-955B-ECFDE8357BD6}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TesteSmartHint.WebApplication", "TesteSmartHint.WebApplication\TesteSmartHint.WebApplication\", "{C0F665C4-9487-469F-A841-D15F2D12F7D7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50931"
+		Debug.AspNetCompiler.PhysicalPath = "TesteSmartHint.WebApplication\TesteSmartHint.WebApplication\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50931\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50931"
+		Release.AspNetCompiler.PhysicalPath = "TesteSmartHint.WebApplication\TesteSmartHint.WebApplication\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50931\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50931"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +64,10 @@ Global
 		{1AA6BCC2-68E7-4D6A-B205-6F188946829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA6BCC2-68E7-4D6A-B205-6F188946829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA6BCC2-68E7-4D6A-B205-6F188946829F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F665C4-9487-469F-A841-D15F2D12F7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F665C4-9487-469F-A841-D15F2D12F7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F665C4-9487-469F-A841-D15F2D12F7D7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F665C4-9487-469F-A841-D15F2D12F7D7}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +78,7 @@ Global
 		{0620236A-9FD5-4CE7-AAD3-150A9FD32B26} = {2DDC7BE7-DD90-48A4-B493-65F2D4D52B06}
 		{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08} = {2DDC7BE7-DD90-48A4-B493-65F2D4D52B06}
 		{1AA6BCC2-68E7-4D6A-B205-6F188946829F} = {2DDC7BE7-DD90-48A4-B493-65F2D4D52B06}
+		{C0F665C4-9487-469F-A841-D15F2D12F7D7} = {4C3A49CD-DF8B-4412-955B-ECFDE8357BD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {536CAA07-7F10-49F0-A9F2-34D49808C97A}
