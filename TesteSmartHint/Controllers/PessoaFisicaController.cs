@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Application.Interfaces;
 using TesteSmartHint.Application.Services;
 using TesteSmartHint.Domain.Entities;
@@ -11,25 +12,22 @@ namespace TesteSmartHint.API.Controllers
     public class PessoaFisicaController : ControllerBase
     {
         private readonly IPessoaFisicaService _pessoaFisicaService;
-        private readonly IPessoaService _pessoaService;
-
-        public PessoaFisicaController(IPessoaFisicaService pessoaFisicaService, IPessoaService pessoaService)
+        public PessoaFisicaController(IPessoaFisicaService pessoaFisicaService)
         {
-            _pessoaFisicaService = pessoaFisicaService;
-            _pessoaService = pessoaService;
+            _pessoaFisicaService = pessoaFisicaService;            
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PessoaFisica>>> GetAll()
+        public async Task<ActionResult<IEnumerable<PessoaFisicaDTO>>> GetAll()
         {
             var lstPessoaFisica = await _pessoaFisicaService.GetAll();
             return Ok(lstPessoaFisica);
         }
 
-        [HttpGet("{id}", Name = "GetPessoaFisicaById")]
-        public async Task<ActionResult<PessoaFisica>> GetPessoaFisicaById(int id)
+        [HttpGet("{CodigoPessoa}", Name = "GetPessoaFisicaById")]
+        public async Task<ActionResult<PessoaFisicaDTO>> GetPessoaFisicaById(int CodigoPessoa)
         {
-            var pessoa = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            var pessoa = await _pessoaFisicaService.GetPessoaFisicaById(CodigoPessoa);
             if (pessoa == null)
                 return NotFound();
             else
@@ -37,45 +35,38 @@ namespace TesteSmartHint.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] PessoaFisica pessoaFisica)
+        public async Task<ActionResult> Post([FromBody] PessoaFisicaDTO pessoaFisica)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             await _pessoaFisicaService.Add(pessoaFisica);
             return Ok(pessoaFisica);
-
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<PessoaFisica>> Put(int id, [FromBody] PessoaFisica pessoaFisica)
+        [HttpPut("{CodigoPessoa}")]
+        public async Task<ActionResult<PessoaFisicaDTO>> Put(int CodigoPessoa, [FromBody] PessoaFisicaDTO pessoaFisica)
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
-            if (id != pessoaFisica.Id)
+            if (CodigoPessoa != pessoaFisica.CodigoPessoa)
             {
                 ModelState.AddModelError("ErrorMessage", "Id inválido");
                 return BadRequest(ModelState);
             }
 
-            var registro = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            var registro = await _pessoaFisicaService.GetPessoaFisicaById(CodigoPessoa);
             if (registro == null)
                 return NotFound();
 
             await _pessoaFisicaService.Update(pessoaFisica);
-            await _pessoaService.Update(pessoaFisica);
 
             return Ok(pessoaFisica);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        [HttpDelete("{CodigoPessoa}")]
+        public async Task<ActionResult> Delete(int CodigoPessoa)
         {
-            var registro = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            var registro = await _pessoaFisicaService.GetPessoaFisicaById(CodigoPessoa);
             if (registro == null)
                 return NotFound();
 
-            await _pessoaFisicaService.Delete(id);
+            await _pessoaFisicaService.Delete(CodigoPessoa);
             return Ok();
         }
     }

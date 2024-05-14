@@ -17,7 +17,8 @@ namespace TesteSmartHint.API.ExceptionHandler
             var problemDetails = new ProblemDetails
             {
                 Status = StatusCodes.Status500InternalServerError,
-                Title = "Internal Server Error"
+                Title = "Erro Interno ao Processar a Requisição",
+                Detail = "O sistema falhou ao processar a requisição, verifique os logs."
             };
 
             httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;

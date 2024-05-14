@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using Dapper;
 using TesteSmartHint.Domain.Entities;
 using TesteSmartHint.Domain.Interfaces;
@@ -13,7 +14,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
 {
     public class PessoaFisicaRepository : IPessoaFisicaRepository
     {
-        private readonly DapperContext _context;
+        private readonly DapperContext _context;        
 
         public PessoaFisicaRepository(DapperContext context)
         {
@@ -61,10 +62,8 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
             using (var connection = _context.CreateConnection())
             {
-
                 var retorno = await connection.QueryAsync(sql, parameters);
                 return pessoaFisica;
-
             }
         }
 
@@ -75,10 +74,16 @@ namespace TesteSmartHint.Infrastructure.Repositories
                             CPF = '{1}', Genero = '{2}', dtNascimento = '{3}'
                             WHERE ID = {0}",
                             pessoaFisica.Id, pessoaFisica.CPF, pessoaFisica.Genero, pessoaFisica.dtNascimento.ToString("yyyy-MM-dd"));
+            
             using (var connection = _context.CreateConnection())
             {
-                var pf = await connection.QueryFirstOrDefaultAsync<PessoaFisica>(query);
-                return pessoaFisica;
+                using (var scope = new TransactionScope())
+                {
+                    var pf = await connection.QueryFirstOrDefaultAsync<PessoaFisica>(query);   
+                    
+                    scope.Complete();
+                    return pessoaFisica;
+                }                
             }
         }
         public async Task Delete(int id)

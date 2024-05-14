@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Domain.Entities;
 
 namespace TesteSmartHint.Application.Interfaces
 {
     public interface IPessoaService
     {
-        Task<IEnumerable<Pessoa>> GetAll();
-        Task<Pessoa> GetPessoaAsync(int id);
-        Task<Pessoa> Add(Pessoa pessoa);
-        Task<Pessoa> Update(Pessoa pessoa);
+        Task<IEnumerable<PessoaDTO>> GetAll();
+        Task<PessoaDTO> GetPessoaAsync(int id);
+        Task<PessoaDTO> Add(PessoaDTO pessoa);
+        Task<PessoaDTO> Update(PessoaDTO pessoa);
         Task Delete(int id);
     }
 }

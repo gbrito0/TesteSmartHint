@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Application.Interfaces;
 using TesteSmartHint.Domain.Entities;
 using TesteSmartHint.Domain.Interfaces;
@@ -22,26 +23,28 @@ namespace TesteSmartHint.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<Pessoa>> GetAll()
+        public async Task<IEnumerable<PessoaDTO>> GetAll()
         {
             var lstPessoa = await _pessoaRepository.GetAll();
-            return lstPessoa;
+            return _mapper.Map<IEnumerable<PessoaDTO>>(lstPessoa);
         }
 
-        public async Task<Pessoa> GetPessoaAsync(int id)
+        public async Task<PessoaDTO> GetPessoaAsync(int id)
         {
             var pessoa = await _pessoaRepository.GetById(id);
-            return pessoa;
+            return _mapper.Map<PessoaDTO>(pessoa);
         }
 
-        public async Task<Pessoa> Add(Pessoa pessoa)
+        public async Task<PessoaDTO> Add(PessoaDTO pessoaDTO)
         {
-            return await _pessoaRepository.Add(pessoa);
+            var pessoa = _mapper.Map<Pessoa>(pessoaDTO);
+            return _mapper.Map<PessoaDTO>(await _pessoaRepository.Add(pessoa));
         }
 
-        public async Task<Pessoa> Update(Pessoa pessoa)
+        public async Task<PessoaDTO> Update(PessoaDTO pessoaDTO)
         {
-            return await _pessoaRepository.Update(pessoa);
+            var pessoa = _mapper.Map<Pessoa>(pessoaDTO);
+            return _mapper.Map<PessoaDTO>(await _pessoaRepository.Update(pessoa));
         }
 
         public async Task Delete(int id)

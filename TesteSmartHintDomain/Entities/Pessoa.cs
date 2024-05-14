@@ -10,11 +10,9 @@ namespace TesteSmartHint.Domain.Entities
 {
     public class Pessoa
     {
-        public Pessoa()
-        {
-        }
+        public Pessoa() { }
 
-        protected Pessoa(int id, string nome, string email, int telefone, DateTime dtCadastro, bool bloqueado, int? inscricaoEstadual)
+        protected Pessoa(int id, string nome, string email, long telefone, DateTime dtCadastro, bool bloqueado, long? inscricaoEstadual)
         {
             Id = id;
             Nome = nome;

@@ -16,6 +16,7 @@ builder.Services.AddSwaggerGen(c =>
 
 //Service Injections
 builder.Services.AddInfrastructureAPI();
+
 //ExceptionHandler
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

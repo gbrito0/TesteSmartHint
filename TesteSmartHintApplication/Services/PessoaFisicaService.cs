@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Application.Interfaces;
 using TesteSmartHint.Domain.Entities;
 using TesteSmartHint.Domain.Interfaces;
@@ -21,25 +22,28 @@ namespace TesteSmartHint.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<PessoaFisica> Add(PessoaFisica pessoaFisica)
+        public async Task<PessoaFisicaDTO> Add(PessoaFisicaDTO pessoaFisicaDTO)
         {
-            return await _pessoaFisicaRepository.Add(pessoaFisica);
+            var pessoaFisica = _mapper.Map<PessoaFisica>(pessoaFisicaDTO);
+            return _mapper.Map<PessoaFisicaDTO>(await _pessoaFisicaRepository.Add(pessoaFisica));
         }
 
-        public async Task<IEnumerable<PessoaFisica>> GetAll()
+        public async Task<IEnumerable<PessoaFisicaDTO>> GetAll()
         {
             var lstPessoaFisica = await _pessoaFisicaRepository.GetAll();
-            return lstPessoaFisica;
+            return _mapper.Map<IEnumerable<PessoaFisicaDTO>>(lstPessoaFisica);
         }
 
-        public async Task<PessoaFisica> GetPessoaFisicaById(int id)
+        public async Task<PessoaFisicaDTO> GetPessoaFisicaById(int id)
         {
-            return await _pessoaFisicaRepository.GetById(id);
+            var pessoaFisica = await _pessoaFisicaRepository.GetById(id);
+            return _mapper.Map<PessoaFisicaDTO>(pessoaFisica);
         }
 
-        public async Task<PessoaFisica> Update(PessoaFisica pessoa)
+        public async Task<PessoaFisicaDTO> Update(PessoaFisicaDTO pessoaFisicaDTO)
         {
-            return await _pessoaFisicaRepository.Update(pessoa);
+            var pessoaFisica = _mapper.Map<PessoaFisica>(pessoaFisicaDTO);
+            return _mapper.Map<PessoaFisicaDTO>(await _pessoaFisicaRepository.Update(pessoaFisica));
         }
 
         public async Task Delete(int id)

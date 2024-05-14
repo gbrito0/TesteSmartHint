@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Application.Interfaces;
 using TesteSmartHint.Domain.Entities;
 using TesteSmartHint.Domain.Interfaces;
@@ -21,25 +22,27 @@ namespace TesteSmartHint.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<PessoaJuridica>> GetAll()
+        public async Task<IEnumerable<PessoaJuridicaDTO>> GetAll()
         {
             var lstPessoaJurdica = await _pessoaJuridicaRepository.GetAll();
-            return lstPessoaJurdica;
+            return _mapper.Map<IEnumerable<PessoaJuridicaDTO>>(lstPessoaJurdica);
         }
 
-        public async Task<PessoaJuridica> GetPessoaJuridicaById(int id)
+        public async Task<PessoaJuridicaDTO> GetPessoaJuridicaById(int id)
         {
-            return await _pessoaJuridicaRepository.GetById(id);
+            return _mapper.Map<PessoaJuridicaDTO>(await _pessoaJuridicaRepository.GetById(id));
         }
 
-        public async Task<PessoaJuridica> Add(PessoaJuridica pessoaJuridica)
+        public async Task<PessoaJuridicaDTO> Add(PessoaJuridicaDTO pessoaJuridicaDTO)
         {
-            return await _pessoaJuridicaRepository.Add(pessoaJuridica);
+            var pessoaJuridica = _mapper.Map<PessoaJuridica>(pessoaJuridicaDTO);
+            return _mapper.Map<PessoaJuridicaDTO>(await _pessoaJuridicaRepository.Add(pessoaJuridica));
         }
 
-        public async Task<PessoaJuridica> Update(PessoaJuridica pessoaJuridica)
+        public async Task<PessoaJuridicaDTO> Update(PessoaJuridicaDTO pessoaJuridicaDTO)
         {
-            return await _pessoaJuridicaRepository.Update(pessoaJuridica);
+            var pessoaJuridica = _mapper.Map<PessoaJuridica>(pessoaJuridicaDTO);
+            return _mapper.Map<PessoaJuridicaDTO>(await _pessoaJuridicaRepository.Update(pessoaJuridica));
         }
 
         public async Task Delete(int id)

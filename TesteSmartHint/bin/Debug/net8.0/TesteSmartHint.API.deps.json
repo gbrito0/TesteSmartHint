@@ -465,6 +465,7 @@
       "TesteSmartHint.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
           "TesteSmartHint.Domain": "1.0.0"
         },
         "runtime": {
