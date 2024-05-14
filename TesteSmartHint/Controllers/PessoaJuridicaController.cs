@@ -29,16 +29,11 @@ namespace TesteSmartHint.API.Controllers
         [HttpGet("{id}", Name = "GetPessoaJuridicaById")]
         public async Task<ActionResult<PessoaJuridica>> GetPessoaJuridicaById(int id)
         {
-            try
-            {
-                var pessoa = await _pessoaJuridicaService.GetPessoaJuridicaById(id);
-                if (pessoa == null)
-                    return NotFound();
-                else
-                    return Ok(pessoa);
-            }
-            catch (Exception ex) { return StatusCode(500, ex.Message); }
-
+            var pessoa = await _pessoaJuridicaService.GetPessoaJuridicaById(id);
+            if (pessoa == null)
+                return NotFound();
+            else
+                return Ok(pessoa);
         }
 
         [HttpPost]
@@ -47,15 +42,10 @@ namespace TesteSmartHint.API.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            try
-            {
-                await _pessoaJuridicaService.Add(pessoaJuridica);
-                return Ok(pessoaJuridica);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+
+            await _pessoaJuridicaService.Add(pessoaJuridica);
+            return Ok(pessoaJuridica);
+
         }
 
         [HttpPut("{id}")]
@@ -72,14 +62,13 @@ namespace TesteSmartHint.API.Controllers
 
             await _pessoaJuridicaService.Update(pessoaJuridica);
             await _pessoaService.Update(pessoaJuridica);
-            
+
             return Ok(pessoaJuridica);
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-
             await _pessoaJuridicaService.Delete(id);
             return Ok();
         }

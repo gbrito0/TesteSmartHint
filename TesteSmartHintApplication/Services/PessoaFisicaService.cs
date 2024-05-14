@@ -23,23 +23,13 @@ namespace TesteSmartHint.Application.Services
 
         public async Task<PessoaFisica> Add(PessoaFisica pessoaFisica)
         {
-            try
-            {
-                return await _pessoaFisicaRepository.Add(pessoaFisica);
-            }
-            catch (Exception ex) { }
-            throw new NotImplementedException();
+            return await _pessoaFisicaRepository.Add(pessoaFisica);
         }
 
         public async Task<IEnumerable<PessoaFisica>> GetAll()
         {
-            try
-            {
-                var lstPessoaFisica = await _pessoaFisicaRepository.GetAll();
-                return lstPessoaFisica;
-
-            }
-            catch (Exception ex) { throw ex; }
+            var lstPessoaFisica = await _pessoaFisicaRepository.GetAll();
+            return lstPessoaFisica;
         }
 
         public async Task<PessoaFisica> GetPessoaFisicaById(int id)
@@ -53,7 +43,7 @@ namespace TesteSmartHint.Application.Services
         }
 
         public async Task Delete(int id)
-        {            
+        {
             await _pessoaFisicaRepository.Delete(id);
         }
     }

@@ -39,28 +39,29 @@ namespace TesteSmartHint.API.Controllers
 
         }
 
-        [HttpPost]
-        public async Task<ActionResult> Post([FromBody]Pessoa pessoa)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            try
-            {
-                await _pessoaService.Add(pessoa);
-                return Ok(pessoa);
-            }catch(Exception ex)
-            {
-                return StatusCode(500, ex.Message); 
-            }            
-        }
-
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             await _pessoaService.Delete(id);
             return Ok();
         }
+
+        //[HttpPost]
+        //public async Task<ActionResult> Post([FromBody]Pessoa pessoa)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return BadRequest(ModelState);
+
+        //    try
+        //    {
+        //        await _pessoaService.Add(pessoa);
+        //        return Ok(pessoa);
+        //    }catch(Exception ex)
+        //    {
+        //        return StatusCode(500, ex.Message); 
+        //    }            
+        //}
+
 
         //[HttpPut("{id}")]
         //public async Task<ActionResult<Pessoa>> Put(int id, [FromBody] Pessoa pessoa)

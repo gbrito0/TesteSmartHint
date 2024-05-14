@@ -17,7 +17,7 @@ namespace TesteSmartHint.CrossCutting.IoC
 {
     public static class DependencyInjectionAPI
     {
-        public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services)
         {
             services.AddSingleton<DapperContext>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));

@@ -23,13 +23,8 @@ namespace TesteSmartHint.Application.Services
 
         public async Task<IEnumerable<PessoaJuridica>> GetAll()
         {
-            try
-            {
-                var lstPessoaJurdica = await _pessoaJuridicaRepository.GetAll();
-                return lstPessoaJurdica;
-
-            }
-            catch (Exception ex) { throw ex; }
+            var lstPessoaJurdica = await _pessoaJuridicaRepository.GetAll();
+            return lstPessoaJurdica;
         }
 
         public async Task<PessoaJuridica> GetPessoaJuridicaById(int id)
@@ -39,12 +34,7 @@ namespace TesteSmartHint.Application.Services
 
         public async Task<PessoaJuridica> Add(PessoaJuridica pessoaJuridica)
         {
-            try
-            {
-                return await _pessoaJuridicaRepository.Add(pessoaJuridica);
-            }
-            catch (Exception ex) { }
-            throw new NotImplementedException();
+            return await _pessoaJuridicaRepository.Add(pessoaJuridica);
         }
 
         public async Task<PessoaJuridica> Update(PessoaJuridica pessoaJuridica)

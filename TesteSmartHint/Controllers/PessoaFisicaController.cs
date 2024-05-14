@@ -29,16 +29,11 @@ namespace TesteSmartHint.API.Controllers
         [HttpGet("{id}", Name = "GetPessoaFisicaById")]
         public async Task<ActionResult<PessoaFisica>> GetPessoaFisicaById(int id)
         {
-            try
-            {
-                var pessoa = await _pessoaFisicaService.GetPessoaFisicaById(id);
-                if (pessoa == null)
-                    return NotFound();
-                else
-                    return Ok(pessoa);
-            }
-            catch (Exception ex) { return StatusCode(500, ex.Message); }
-
+            var pessoa = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            if (pessoa == null)
+                return NotFound();
+            else
+                return Ok(pessoa);
         }
 
         [HttpPost]
@@ -47,15 +42,9 @@ namespace TesteSmartHint.API.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            try
-            {                
-                await _pessoaFisicaService.Add(pessoaFisica);
-                return Ok(pessoaFisica);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            await _pessoaFisicaService.Add(pessoaFisica);
+            return Ok(pessoaFisica);
+
         }
 
         [HttpPut("{id}")]
@@ -68,7 +57,11 @@ namespace TesteSmartHint.API.Controllers
                 ModelState.AddModelError("ErrorMessage", "Id inválido");
                 return BadRequest(ModelState);
             }
-                                     
+
+            var registro = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            if (registro == null)
+                return NotFound();
+
             await _pessoaFisicaService.Update(pessoaFisica);
             await _pessoaService.Update(pessoaFisica);
 
@@ -78,6 +71,10 @@ namespace TesteSmartHint.API.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
+            var registro = await _pessoaFisicaService.GetPessoaFisicaById(id);
+            if (registro == null)
+                return NotFound();
+
             await _pessoaFisicaService.Delete(id);
             return Ok();
         }

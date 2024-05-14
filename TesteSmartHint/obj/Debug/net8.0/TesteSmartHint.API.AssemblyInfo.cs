@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteSmartHint.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd820556aa9a17ab87684726545636d2d39aa003")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b42fbd0fa54db25560aa510740c6e23bebc52622")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteSmartHint.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteSmartHint.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

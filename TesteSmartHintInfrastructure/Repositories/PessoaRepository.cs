@@ -73,7 +73,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
             var query = string.Format(@"DELETE FROM Pessoa WHERE ID = {0}", id);
             using (var connection = _context.CreateConnection())
             {
-                await connection.QueryAsync(query);
+                var x = await connection.QueryAsync(query);
             }
         }
 

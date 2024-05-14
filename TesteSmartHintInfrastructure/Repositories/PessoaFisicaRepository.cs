@@ -61,15 +61,10 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
             using (var connection = _context.CreateConnection())
             {
-                try
-                {
-                    var retorno = await connection.QueryAsync(sql, parameters);
-                    return pessoaFisica;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
+
+                var retorno = await connection.QueryAsync(sql, parameters);
+                return pessoaFisica;
+
             }
         }
 

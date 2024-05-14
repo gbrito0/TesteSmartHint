@@ -35,9 +35,8 @@ namespace TesteSmartHint.Application.Services
         }
 
         public async Task<Pessoa> Add(Pessoa pessoa)
-        {            
-
-            return await _pessoaRepository.Add(pessoa); 
+        {
+            return await _pessoaRepository.Add(pessoa);
         }
 
         public async Task<Pessoa> Update(Pessoa pessoa)
