@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteSmartHint.CrossCutting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abcf2e43be9d2e58e3a701d7e48bafdeb13f122e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+561d333ddd53aea6133fe99e9324d7bc5cdcf1ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteSmartHint.CrossCutting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteSmartHint.CrossCutting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
