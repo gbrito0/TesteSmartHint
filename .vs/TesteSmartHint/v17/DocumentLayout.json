@@ -3,60 +3,16 @@
   "WorkspaceRootPath": "C:\\git\\TesteSmartHint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\TesteSmartHint\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\git\\testesmarthint\\testesmarthint\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\services\\pessoaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\services\\pessoaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|c:\\git\\testesmarthint\\testesmarthintinfrastructure\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\mapping\\domaintodtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\mapping\\domaintodtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\dtos\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\dtos\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\dtos\\pessoajuridicadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\dtos\\pessoajuridicadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\dtos\\pessoafisicadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\dtos\\pessoafisicadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\git\\testesmarthint\\testesmarthint\\controllers\\pessoajuridicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\controllers\\pessoajuridicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\git\\testesmarthint\\testesmarthint\\controllers\\pessoafisicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\controllers\\pessoafisicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|c:\\git\\testesmarthint\\testesmarthintinfrastructure\\repositories\\pessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\repositories\\pessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|c:\\git\\testesmarthint\\testesmarthintinfrastructure\\repositories\\pessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\repositories\\pessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\git\\testesmarthint\\testesmarthint\\exceptionhandler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\exceptionhandler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\services\\pessoajuridicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\services\\pessoajuridicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\services\\pessoaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\services\\pessoaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\services\\pessoafisicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,28 +23,24 @@
       "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\interfaces\\ipessoaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\interfaces\\ipessoajuridicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\interfaces\\ipessoajuridicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|c:\\git\\testesmarthint\\testesmarthintapplication\\interfaces\\ipessoafisicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E32FDB0-9958-4343-9B8E-D8EFBE34183F}|TesteSmartHintApplication\\TesteSmartHint.Application.csproj|solutionrelative:testesmarthintapplication\\interfaces\\ipessoafisicaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\git\\testesmarthint\\testesmarthintdomain\\interfaces\\ipessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\interfaces\\ipessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\git\\testesmarthint\\testesmarthintdomain\\interfaces\\ipessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\interfaces\\ipessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\git\\testesmarthint\\testesmarthintdomain\\interfaces\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\interfaces\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|c:\\git\\testesmarthint\\testesmarthint\\exceptionhandler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BB81DC-FBC7-49AD-B61E-EE04CCBD1B82}|TesteSmartHint\\TesteSmartHint.API.csproj|solutionrelative:testesmarthint\\exceptionhandler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\git\\testesmarthint\\testesmarthintdomain\\entities\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\entities\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|c:\\git\\testesmarthint\\testesmarthintinfrastructure\\repositories\\pessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\repositories\\pessoafisicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|c:\\git\\testesmarthint\\testesmarthintinfrastructure\\repositories\\pessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777B2D7D-4B7B-4E1B-A162-3D027D3BCE08}|TesteSmartHintInfrastructure\\TesteSmartHint.Infrastructure.csproj|solutionrelative:testesmarthintinfrastructure\\repositories\\pessoajuridicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|c:\\git\\testesmarthint\\testesmarthintdomain\\interfaces\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0620236A-9FD5-4CE7-AAD3-150A9FD32B26}|TesteSmartHintDomain\\TesteSmartHint.Domain.csproj|solutionrelative:testesmarthintdomain\\interfaces\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,257 +62,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\git\\TesteSmartHint\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAAI0BAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-14T17:07:42.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PessoaDTO.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaDTO.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\DTOs\\PessoaDTO.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaDTO.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\DTOs\\PessoaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:34:22.876Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PessoaJuridicaDTO.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaJuridicaDTO.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\DTOs\\PessoaJuridicaDTO.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaJuridicaDTO.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\DTOs\\PessoaJuridicaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:34:19.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PessoaFisicaDTO.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaFisicaDTO.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\DTOs\\PessoaFisicaDTO.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\DTOs\\PessoaFisicaDTO.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\DTOs\\PessoaFisicaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:34:18.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PessoaJuridicaController.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaJuridicaController.cs",
-              "RelativeDocumentMoniker": "TesteSmartHint\\Controllers\\PessoaJuridicaController.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaJuridicaController.cs",
-              "RelativeToolTip": "TesteSmartHint\\Controllers\\PessoaJuridicaController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAcwEgAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:31:26.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PessoaFisicaController.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaFisicaController.cs",
-              "RelativeDocumentMoniker": "TesteSmartHint\\Controllers\\PessoaFisicaController.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaFisicaController.cs",
-              "RelativeToolTip": "TesteSmartHint\\Controllers\\PessoaFisicaController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAcwEgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:29:54.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GlobalExceptionHandler.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
-              "RelativeDocumentMoniker": "TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
-              "RelativeToolTip": "TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwBAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:17:30.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DomainToDTOMappingProfile.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Mapping\\DomainToDTOMappingProfile.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Mapping\\DomainToDTOMappingProfile.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Mapping\\DomainToDTOMappingProfile.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Mapping\\DomainToDTOMappingProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAEwAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:17:30.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PessoaController.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaController.cs",
-              "RelativeDocumentMoniker": "TesteSmartHint\\Controllers\\PessoaController.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaController.cs",
-              "RelativeToolTip": "TesteSmartHint\\Controllers\\PessoaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:12:12.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PessoaJuridicaService.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaJuridicaService.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Services\\PessoaJuridicaService.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaJuridicaService.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Services\\PessoaJuridicaService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwDYAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:10:44.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IPessoaService.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:07:50.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IPessoaJuridicaService.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaJuridicaService.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Interfaces\\IPessoaJuridicaService.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaJuridicaService.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Interfaces\\IPessoaJuridicaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:07:50.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IPessoaFisicaService.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaFisicaService.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Interfaces\\IPessoaFisicaService.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaFisicaService.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Interfaces\\IPessoaFisicaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:07:49.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PessoaFisicaService.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
-              "RelativeToolTip": "TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDcAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:07:46.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IPessoaJuridicaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaJuridicaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:05:42.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IPessoaFisicaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaFisicaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:05:04.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PessoaFisicaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAcwGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:04:54.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PessoaJuridicaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAcwGkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:04:39.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PessoaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAswFoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:48:57.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IPessoaRepository.cs",
-              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
-              "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
-              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
-              "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:48:35.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "Pessoa.cs",
               "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "RelativeDocumentMoniker": "TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Entities\\Pessoa.cs",
               "RelativeToolTip": "TesteSmartHintDomain\\Entities\\Pessoa.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBsAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:48:19.704Z"
+              "WhenOpened": "2024-05-14T19:13:16.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PessoaJuridicaRepository.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
+              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaJuridicaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:49:20.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPessoaRepository.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
+              "RelativeToolTip": "TesteSmartHintDomain\\Interfaces\\IPessoaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:47:27.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PessoaFisicaRepository.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
+              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaFisicaRepository.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwBwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:50:27.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "TesteSmartHint\\ExceptionHandler\\GlobalExceptionHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:50:27.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PessoaRepository.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
+              "RelativeToolTip": "TesteSmartHintInfrastructure\\Repositories\\PessoaRepository.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAqwHAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:50:27.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PessoaFisicaService.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
+              "RelativeToolTip": "TesteSmartHintApplication\\Services\\PessoaFisicaService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:50:27.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PessoaController.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaController.cs",
+              "RelativeDocumentMoniker": "TesteSmartHint\\Controllers\\PessoaController.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHint\\Controllers\\PessoaController.cs",
+              "RelativeToolTip": "TesteSmartHint\\Controllers\\PessoaController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAuwF4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:49:16.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPessoaService.cs",
+              "DocumentMoniker": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
+              "RelativeDocumentMoniker": "TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
+              "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
+              "RelativeToolTip": "TesteSmartHintApplication\\Interfaces\\IPessoaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:23:52.273Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -370,9 +185,10 @@
               "RelativeDocumentMoniker": "TesteSmartHintApplication\\Services\\PessoaService.cs",
               "ToolTip": "C:\\git\\TesteSmartHint\\TesteSmartHintApplication\\Services\\PessoaService.cs",
               "RelativeToolTip": "TesteSmartHintApplication\\Services\\PessoaService.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAUwC8AAAAIAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAswEMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:57:30.035Z"
+              "WhenOpened": "2024-05-14T02:57:30.035Z",
+              "EditorCaption": ""
             }
           ]
         }

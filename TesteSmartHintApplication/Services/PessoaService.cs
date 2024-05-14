@@ -29,7 +29,7 @@ namespace TesteSmartHint.Application.Services
             return _mapper.Map<IEnumerable<PessoaDTO>>(lstPessoa);
         }
 
-        public async Task<PessoaDTO> GetPessoaAsync(int id)
+        public async Task<PessoaDTO> GetPessoaById(int id)
         {
             var pessoa = await _pessoaRepository.GetById(id);
             return _mapper.Map<PessoaDTO>(pessoa);
@@ -61,5 +61,14 @@ namespace TesteSmartHint.Application.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<IEnumerable<PessoaDTO>> GetByFiltro(Dictionary<string, string> filtros)
+        {            
+            filtros = filtros.ToDictionary(obj => obj.Key.ToLower(), obj => obj.Value);
+            var retorno = await _pessoaRepository.GetByFiltro(filtros);            
+            return _mapper.Map<IEnumerable<PessoaDTO>>(retorno); 
+        }
+
+
     }
 }

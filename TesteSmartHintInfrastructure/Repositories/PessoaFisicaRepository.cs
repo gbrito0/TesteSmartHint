@@ -104,5 +104,10 @@ namespace TesteSmartHint.Infrastructure.Repositories
                 return await connection.QueryFirstAsync<bool>(query);
             }
         }
+
+        public Task<IEnumerable<PessoaFisica>> GetByFiltro(IDictionary<string, string> filtro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

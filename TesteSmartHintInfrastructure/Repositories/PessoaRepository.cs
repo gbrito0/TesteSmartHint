@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -75,7 +76,6 @@ namespace TesteSmartHint.Infrastructure.Repositories
                 var x = await connection.QueryAsync(query);
             }
         }
-
         public async Task<Pessoa> Update(Pessoa pessoa)
         {
             var query = string.Format(@"  
@@ -98,6 +98,57 @@ namespace TesteSmartHint.Infrastructure.Repositories
             {
                 return await connection.QueryFirstAsync<bool>(query);
             }
+        }
+
+        public async Task<IEnumerable<Pessoa>> GetByFiltro(IDictionary<string, string> filtros)
+        {
+            string query = "SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado FROM Pessoa WHERE 1 = 1";
+            var parametros = new DynamicParameters();            
+            query = MontaQueryFiltros(query, filtros, ref parametros);
+
+            using (var connection = _context.CreateConnection())
+            {
+                try
+                {
+                    var pessoa = await connection.QueryAsync<Pessoa>(query, parametros);
+                    return pessoa;
+                }
+                catch(Exception ex) { throw ex; }
+                
+                
+            }
+        }
+
+        private String MontaQueryFiltros(String query, IDictionary<string, string> filtro, ref DynamicParameters parametros) {            
+            
+            StringBuilder sql = new StringBuilder();            
+            sql.Append(query);
+            string valor;
+
+            if (filtro.TryGetValue("nome", out valor))
+            {
+                sql.Append(" AND Nome like @Nome");
+                parametros.Add("Nome", $"%{valor}%");
+            }
+            if (filtro.TryGetValue("email", out valor))
+            {
+                sql.Append(" AND Email like @Email");
+                parametros.Add("Email", $"%{valor}%");
+            }
+            if (filtro.TryGetValue("telefone", out valor))
+            {
+                sql.Append(" AND Telefone = @Telefone");
+                parametros.Add("Telefone", valor);
+            }
+            if (filtro.TryGetValue("bloqueado", out valor))
+            {
+                sql.Append(" AND Bloqueado = @Bloqueado");
+                parametros.Add("Bloqueado",valor);
+            }
+
+            return sql.ToString();
+
+            //DATAS
         }
     }
 }

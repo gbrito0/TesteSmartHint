@@ -15,5 +15,6 @@ namespace TesteSmartHint.Domain.Interfaces
         Task<T> Update(T entity);
         Task Delete(int id);
         Task<bool> ValidaCampo(string campo);
+        Task<IEnumerable<T>> GetByFiltro(IDictionary<string,string> filtro);
     }
 }

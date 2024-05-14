@@ -11,7 +11,8 @@ namespace TesteSmartHint.Application.Interfaces
     public interface IPessoaService
     {
         Task<IEnumerable<PessoaDTO>> GetAll();
-        Task<PessoaDTO> GetPessoaAsync(int id);
+        Task<PessoaDTO> GetPessoaById(int id);
+        Task<IEnumerable<PessoaDTO>>GetByFiltro(Dictionary<string, string> filtro);
         Task<PessoaDTO> Add(PessoaDTO pessoa);
         Task<PessoaDTO> Update(PessoaDTO pessoa);
         Task Delete(int id);

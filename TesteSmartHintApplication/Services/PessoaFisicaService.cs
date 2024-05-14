@@ -52,7 +52,7 @@ namespace TesteSmartHint.Application.Services
         }
 
         public async Task<bool> ValidaCPF(string CPF)
-        {
+        {            
             return await _pessoaFisicaRepository.ValidaCampo(CPF);
         }
     }

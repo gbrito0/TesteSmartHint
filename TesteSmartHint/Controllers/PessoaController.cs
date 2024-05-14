@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using TesteSmartHint.Application.DTOs;
 using TesteSmartHint.Application.Interfaces;
+using TesteSmartHint.Domain.Entities;
 
 namespace TesteSmartHint.API.Controllers
 {
@@ -26,7 +29,7 @@ namespace TesteSmartHint.API.Controllers
         [HttpGet("{id}", Name = "GetPessoaById")]
         public async Task<ActionResult<PessoaDTO>> GetById(int id)
         {
-            var pessoa = await _pessoaService.GetPessoaAsync(id);
+            var pessoa = await _pessoaService.GetPessoaById(id);
             if (pessoa == null)
                 return NotFound();
             else
@@ -70,7 +73,29 @@ namespace TesteSmartHint.API.Controllers
         public async Task<ActionResult<bool>> ValidaEmail(string email)
         {
             var emailEncontrado = await _pessoaService.ValidaEmail(email);
-            return(Ok(!emailEncontrado));
+            return (Ok(!emailEncontrado));
+        }
+
+        [HttpGet("GetByFiltros")]
+        public async Task<IActionResult> GetByFiltros([FromQuery] Dictionary<string, string> filtros)
+        {
+            //http://localhost/api/products?filter={"name":"Test","price":10}
+            //var filterDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(filtros);
+            /*
+                         * {
+              "Nome": "guilherme",
+              "Telefone": "11987367440"
+            }
+             */
+
+            if (filtros == null)
+                return BadRequest();
+            
+            var pessoas = await _pessoaService.GetByFiltro(filtros);
+            if (pessoas == null || pessoas.Count() == 0)
+                return NotFound();
+            else
+                return (Ok(pessoas));
         }
     }
 }
