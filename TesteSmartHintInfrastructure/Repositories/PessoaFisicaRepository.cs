@@ -95,14 +95,14 @@ namespace TesteSmartHint.Infrastructure.Repositories
             }
         }
 
-        public Task<bool> validaCPF(string CPF)
+        //Valida CPF
+        public async Task<bool> ValidaCampo(string CPF)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> validaEmail(string CPF)
-        {
-            throw new NotImplementedException();
+            var query = string.Format(@"SELECT EXISTS(SELECT ID FROM PessoaFisica WHERE CPF = '{0}') as CPFCadastrado", CPF);
+            using (var connection = _context.CreateConnection())
+            {
+                return await connection.QueryFirstAsync<bool>(query);
+            }
         }
     }
 }

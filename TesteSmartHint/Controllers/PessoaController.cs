@@ -57,22 +57,20 @@ namespace TesteSmartHint.API.Controllers
             }
         }
 
-
         [HttpPut("{id}")]
         public async Task<ActionResult<PessoaDTO>> Put(int id, [FromBody] PessoaDTO pessoa)
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
-            if (id != pessoa.Id)
-            {
-                ModelState.AddModelError("ErrorMessage", "Id inválido");
-                return BadRequest(ModelState);
-            }
-
+            pessoa.CodigoPessoa = id;
             await _pessoaService.Update(pessoa);
 
             return Ok(pessoa);
         }
 
+        [HttpGet("ValidaEmail")]
+        public async Task<ActionResult<bool>> ValidaEmail(string email)
+        {
+            var emailEncontrado = await _pessoaService.ValidaEmail(email);
+            return(Ok(!emailEncontrado));
+        }
     }
 }

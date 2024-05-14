@@ -50,5 +50,10 @@ namespace TesteSmartHint.Application.Services
         {
             await _pessoaFisicaRepository.Delete(id);
         }
+
+        public async Task<bool> ValidaCPF(string CPF)
+        {
+            return await _pessoaFisicaRepository.ValidaCampo(CPF);
+        }
     }
 }

@@ -19,15 +19,14 @@ namespace TesteSmartHint.Infrastructure.Repositories
         {
             _context = context;
         }
-        
 
         public async Task<Pessoa> GetById(int id)
         {
             var query = string.Format(@"
                                         SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado
                                         FROM Pessoa
-                                        WHERE Pessoa.ID = {0}",id);
-            using(var connection = _context.CreateConnection())
+                                        WHERE Pessoa.ID = {0}", id);
+            using (var connection = _context.CreateConnection())
             {
                 var pessoa = await connection.QueryFirstOrDefaultAsync<Pessoa>(query);
                 return pessoa;
@@ -44,7 +43,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
         }
         public async Task<Pessoa> Add(Pessoa pessoa)
         {
-            
+
             var sql =
                 @"INSERT INTO Pessoa
                         (Nome, Email, Telefone, dtCadastro, Bloqueado)
@@ -77,7 +76,6 @@ namespace TesteSmartHint.Infrastructure.Repositories
             }
         }
 
-
         public async Task<Pessoa> Update(Pessoa pessoa)
         {
             var query = string.Format(@"  
@@ -92,9 +90,14 @@ namespace TesteSmartHint.Infrastructure.Repositories
             }
         }
 
-        public Task<bool> validaEmail(string CPF)
+        //Valida Email
+        public async Task<bool> ValidaCampo(string email)
         {
-            throw new NotImplementedException();
+            var query = string.Format(@"SELECT EXISTS(SELECT ID FROM Pessoa WHERE Email = '{0}') as EmailCadastrado", email);
+            using (var connection = _context.CreateConnection())
+            {
+                return await connection.QueryFirstAsync<bool>(query);
+            }
         }
     }
 }

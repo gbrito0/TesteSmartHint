@@ -13,6 +13,7 @@ namespace TesteSmartHint.Application.Mapping
     {
         public DomainToDTOMappingProfile() { 
             CreateMap<Pessoa, PessoaDTO>()
+                .ForMember(dest => dest.CodigoPessoa, opt => opt.MapFrom(src => src.Id))
                 .ReverseMap();
             CreateMap<PessoaFisica, PessoaFisicaDTO>()
                 .ForMember(dest => dest.CodigoPessoa, opt => opt.MapFrom(src => src.Id))

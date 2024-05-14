@@ -15,5 +15,8 @@ namespace TesteSmartHint.Application.Interfaces
         Task<PessoaDTO> Add(PessoaDTO pessoa);
         Task<PessoaDTO> Update(PessoaDTO pessoa);
         Task Delete(int id);
+        Task<bool> ValidaEmail(string Email);
+        Task<bool> ValidaInscricaoEstadual(string inscricaoEstadual);
     }
 }
+

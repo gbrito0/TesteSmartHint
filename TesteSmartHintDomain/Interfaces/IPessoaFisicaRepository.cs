@@ -9,6 +9,6 @@ namespace TesteSmartHint.Domain.Interfaces
 {
     public interface IPessoaFisicaRepository : IPessoaRepository<PessoaFisica>
     {
-        Task<bool> validaCPF(string CPF);
+        
     }
 }

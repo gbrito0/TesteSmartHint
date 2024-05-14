@@ -49,5 +49,10 @@ namespace TesteSmartHint.Application.Services
         {
             await _pessoaJuridicaRepository.Delete(id);
         }
+
+        public async Task<bool> ValidaCNPJ(string CNPJ)
+        {
+            return await _pessoaJuridicaRepository.ValidaCampo(CNPJ);
+        }
     }
 }

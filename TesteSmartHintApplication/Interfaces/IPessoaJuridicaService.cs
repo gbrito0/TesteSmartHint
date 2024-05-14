@@ -15,5 +15,6 @@ namespace TesteSmartHint.Application.Interfaces
         Task<PessoaJuridicaDTO> Add(PessoaJuridicaDTO pessoaJuridica);
         Task<PessoaJuridicaDTO> Update(PessoaJuridicaDTO pessoaJuridica);
         Task Delete(int id);
+        Task<bool> ValidaCNPJ(string CNPJ);
     }
 }

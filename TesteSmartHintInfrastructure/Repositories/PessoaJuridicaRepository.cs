@@ -55,7 +55,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
                             WHERE pj.ID = {0}", id);
             using (var connection = _context.CreateConnection())
             {
-                var pj  = await connection.QueryFirstOrDefaultAsync<PessoaJuridica>(query);
+                var pj = await connection.QueryFirstOrDefaultAsync<PessoaJuridica>(query);
                 return pj;
             }
         }
@@ -91,25 +91,19 @@ namespace TesteSmartHint.Infrastructure.Repositories
         {
             var query = string.Format(@"DELETE FROM PessoaJuridica WHERE ID = {0}", id);
             using (var connection = _context.CreateConnection())
-            {                
-                await connection.QueryAsync(query); 
+            {
+                await connection.QueryAsync(query);
             }
         }
 
-        public async Task<bool> validaCNPJ(string CNPJ)
+        //Valida CNPJ
+        public async Task<bool> ValidaCampo(string CNPJ)
         {
-            var query = string.Format(@"SELECT true FROM PessoaJuridica WHERE CNPJ = {0}", CNPJ);
+            var query = string.Format(@"SELECT EXISTS(SELECT ID FROM PessoaJuridica WHERE CNPJ = '{0}') as CNPJCadastrado", CNPJ);
             using (var connection = _context.CreateConnection())
             {
-                var cnpjExistente = await connection.QueryFirstOrDefault(query);
-                return cnpjExistente;
+                return await connection.QueryFirstAsync<bool>(query);
             }
-
-        }
-
-        public Task<bool> validaEmail(string CPF)
-        {
-            throw new NotImplementedException();
         }
     }
 }

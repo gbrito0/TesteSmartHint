@@ -11,7 +11,7 @@ namespace TesteSmartHint.Application.DTOs
     public class PessoaDTO
     {
         [SwaggerSchema(ReadOnly = true)]
-        public int Id { get; set; }
+        public int CodigoPessoa { get; set; }
 
         [Required(ErrorMessage = "Nome é obrigatório")]
         [MinLength(1)]

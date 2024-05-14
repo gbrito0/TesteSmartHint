@@ -14,6 +14,6 @@ namespace TesteSmartHint.Domain.Interfaces
         Task<T> Add(T entity);
         Task<T> Update(T entity);
         Task Delete(int id);
-        Task<bool> validaEmail(string CPF);
+        Task<bool> ValidaCampo(string campo);
     }
 }

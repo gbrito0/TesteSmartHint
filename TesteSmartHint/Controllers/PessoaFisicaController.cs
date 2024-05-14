@@ -69,5 +69,12 @@ namespace TesteSmartHint.API.Controllers
             await _pessoaFisicaService.Delete(CodigoPessoa);
             return Ok();
         }
+
+        [HttpGet("ValidaCPF")]
+        public async Task<ActionResult<bool>> ValidaCPF(string CPF)
+        {
+            var CPFEncontrado = await _pessoaFisicaService.ValidaCPF(CPF);
+            return (Ok(!CPFEncontrado));            
+        }
     }
 }

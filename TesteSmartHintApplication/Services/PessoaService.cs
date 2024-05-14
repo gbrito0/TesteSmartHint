@@ -51,5 +51,15 @@ namespace TesteSmartHint.Application.Services
         {
             await _pessoaRepository.Delete(id);
         }
+
+        public async Task<bool> ValidaEmail(string Email)
+        {
+            return await _pessoaRepository.ValidaCampo(Email);
+        }
+
+        public Task<bool> ValidaInscricaoEstadual(string inscricaoEstadual)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

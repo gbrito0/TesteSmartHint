@@ -68,5 +68,12 @@ namespace TesteSmartHint.API.Controllers
             await _pessoaJuridicaService.Delete(id);
             return Ok();
         }
+
+        [HttpGet("ValidaCNPJ")]
+        public async Task<ActionResult<bool>> ValidaCNPJ(string CNPJ)
+        {
+            var CNPJEncontrado = await _pessoaJuridicaService.ValidaCNPJ(CNPJ);
+            return (Ok(!CNPJEncontrado));
+        }
     }
 }

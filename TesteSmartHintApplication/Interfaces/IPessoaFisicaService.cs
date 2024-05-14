@@ -15,5 +15,6 @@ namespace TesteSmartHint.Application.Interfaces
         Task<PessoaFisicaDTO> Add(PessoaFisicaDTO pessoa);        
         Task<PessoaFisicaDTO> Update(PessoaFisicaDTO pessoa);
         Task Delete(int id);
+        Task<bool> ValidaCPF(string CPF);
     }
 }
