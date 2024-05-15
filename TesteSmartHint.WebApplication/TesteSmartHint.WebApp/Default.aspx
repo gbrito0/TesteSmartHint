@@ -3,13 +3,13 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">Teste SmartHint</h1>
+            <h1 id="aspnetTitle">Teste SmartHint - Consulta</h1>
             <div class="row">
                 <section class="col-md-9 mx-3">
                     <p class="lead">Consulte os seus Clientes cadastrados na sua Loja ou realize o cadastro de novos Cliente</p>
                 </section>
                 <section class="col-md-2">
-                    <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Adicionar Cliente</a></p>
+                    <p><a href="./Cadastro.aspx" class="btn btn-primary btn-md">Adicionar Cliente</a></p>
                 </section>
             </div>
         </section>
@@ -66,10 +66,9 @@
                                 <label id="lblTelefone" class="form-label">Telefone:</label>
                             </div>
                             <input id="txtTelefone" runat="server"
-                                type="number" min="11" max="11" step="1"
+                                type="text" data-mask="(00) 00000-0000"
                                 class="form-control telefone"
-                                placeholder="Telefone do Cliente"
-                                required />
+                                placeholder="Telefone do Cliente"/>
                         </section>
                         <section class="col-md-3 mt-2">
                             <div>

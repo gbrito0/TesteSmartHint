@@ -7,21 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TesteSmartHint.WebApp
+namespace TesteSmartHint.WebApp.Secure
 {
 
 
-    public partial class _Default
+    public partial class Cadastro
     {
 
         /// <summary>
-        /// divPesquisa control.
+        /// divPrincipal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divPesquisa;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divPrincipal;
 
         /// <summary>
         /// txtNome control.
@@ -60,48 +60,30 @@ namespace TesteSmartHint.WebApp
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtDataCadastro;
 
         /// <summary>
-        /// ddlBloqueado control.
+        /// divInformacoesPessoais control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect ddlBloqueado;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divInformacoesPessoais;
 
         /// <summary>
-        /// btnAplicarFiltros control.
+        /// ddlPessoa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnAplicarFiltros;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect ddlPessoa;
 
         /// <summary>
-        /// btnLimparFiltros control.
+        /// txtDocumento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnLimparFiltros;
-
-        /// <summary>
-        /// upGrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upGrid;
-
-        /// <summary>
-        /// grvCompradores control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvCompradores;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDocumento;
     }
 }
