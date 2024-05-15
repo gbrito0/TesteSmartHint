@@ -10,8 +10,8 @@ namespace TesteSmartHint.Domain.Entities
     {
         public PessoaFisica() { }
 
-        protected PessoaFisica(int id, string nome, string email, int telefone, DateTime dtCadastro,
-            bool bloqueado, int? inscricaoEstadual, string CPF, string Genero, DateTime dtNascimento) : base(id, nome, email, telefone, dtCadastro, bloqueado, inscricaoEstadual)
+        protected PessoaFisica(int id, string nome, string email, long telefone, DateTime dtCadastro,
+            bool bloqueado, long? inscricaoEstadual, string CPF, string Genero, DateTime dtNascimento) : base(id, nome, email, telefone, dtCadastro, bloqueado, inscricaoEstadual)
         {
             this.CPF = CPF;
             this.Genero = Genero;

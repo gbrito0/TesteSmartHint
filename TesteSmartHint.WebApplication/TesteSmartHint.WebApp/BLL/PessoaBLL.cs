@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Security.Policy;
+using System.Text;
 using System.Web;
+using Newtonsoft.Json;
 using TesteSmartHint.WebApp.DTO;
 using TesteSmartHint.WebApp.Mapeamentos;
 using TesteSmartHint.WebApp.Models;
@@ -18,10 +20,10 @@ namespace TesteSmartHint.WebApp.BLL
             HttpResponseMessage response = client.GetAsync("api/Pessoa").Result;
             if (response.IsSuccessStatusCode)
             {
-                var lancamentos = response.Content.ReadAsAsync<IEnumerable<PessoaDTO>>().Result;
+                var registros = response.Content.ReadAsAsync<IEnumerable<PessoaDTO>>().Result;
 
                 var mapper = AutoMapperConfig.InicializarProfiles();
-                var retorno = mapper.Map<IEnumerable<Pessoa>>(lancamentos);
+                var retorno = mapper.Map<IEnumerable<Pessoa>>(registros);
 
                 return retorno.ToList();
             }
@@ -44,15 +46,45 @@ namespace TesteSmartHint.WebApp.BLL
             
             if (response.IsSuccessStatusCode)
             {
-                var lancamentos = response.Content.ReadAsAsync<IEnumerable<PessoaDTO>>().Result;
+                var registros = response.Content.ReadAsAsync<IEnumerable<PessoaDTO>>().Result;
 
                 var mapper = AutoMapperConfig.InicializarProfiles();
-                var retorno = mapper.Map<IEnumerable<Pessoa>>(lancamentos);
+                var retorno = mapper.Map<IEnumerable<Pessoa>>(registros);
 
                 return retorno.ToList();
             }
             else
                 return null;
+        }
+        public static bool ValidaEmail(HttpClient client, string email)
+        {
+            HttpResponseMessage response = client.GetAsync($"api/Pessoa/ValidaEmail?email={email}").Result;
+            
+            if (response.IsSuccessStatusCode)
+            {
+                var retorno= response.Content.ReadAsAsync<bool>().Result;
+                return retorno;
+            }
+            else
+                return false;            
+        }
+
+        public static Pessoa CadastraPessoa(HttpClient client, Pessoa pessoa)
+        {
+            var mapper = AutoMapperConfig.InicializarProfiles();
+            var pessoaDTO = mapper.Map<PessoaDTO>(pessoa);
+
+            var json = JsonConvert.SerializeObject(pessoaDTO);
+            StringContent jsonContent = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = client.PostAsync("api/Pessoa", jsonContent).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                var obj = response.Content.ReadAsAsync<PessoaDTO>().Result;                
+                return mapper.Map<Pessoa>(obj);
+            }
+            else
+                return null;            
         }
     }
 }

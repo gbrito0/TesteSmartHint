@@ -18,7 +18,14 @@ namespace TesteSmartHint.WebApp.Mapeamentos
             {
                 cfg.CreateMap<PessoaDTO, Pessoa>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CodigoPessoa))
-                .ReverseMap();                                
+                .ReverseMap();
+                cfg.CreateMap<PessoaFisicaDTO, PessoaFisica>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CodigoPessoa))
+                .ReverseMap();
+                cfg.CreateMap<PessoaJuridicaDTO, PessoaJuridica>()
+                .ForMember(dest => dest.Nome, opt => opt.MapFrom(src => src.RazaoSocial))
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CodigoEmpresa))
+                .ReverseMap();
             });
 
             return new Mapper(config);

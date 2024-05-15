@@ -23,7 +23,7 @@ namespace TesteSmartHint.Application.DTOs
         [MaxLength(150)]
         public string Email { get; set; }
         
-        [Range(1, 9999999999, ErrorMessage = "Telefone inválido")]
+        [Range(1, 99999999999, ErrorMessage = "Telefone inválido")]
         public long Telefone { get; set; }
 
         [SwaggerSchema(ReadOnly = true)]

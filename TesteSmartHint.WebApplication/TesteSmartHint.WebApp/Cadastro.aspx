@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <script>
         $(document).ready(function () {
-            //bloqueiaCampos();//inicia bloqueando campos
+
         })
     </script>
     <main>
@@ -28,7 +28,8 @@
                         <input id="txtNome" runat="server"
                             type="text" maxlength="150"
                             class="form-control "
-                            placeholder="Nome Completo ou Razão Social do Cliente" required />
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nome completo ou Razão Social do Cliente"                            
+                            placeholder="Nome/Razão Social" required />
                     </section>
                     <section class="col-md-6">
                         <div>
@@ -37,7 +38,8 @@
                         <input id="txtEmail" runat="server"
                             type="email" maxlength="150"
                             class="form-control "
-                            placeholder="E-mail do Cliente" required />
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="E-mail do Cliente"
+                            placeholder="E-mail" required />
                     </section>
                     <section class="col-md-3 mt-2">
                         <div>
@@ -46,7 +48,8 @@
                         <input id="txtTelefone" runat="server"
                             type="text" data-mask="(00) 00000-0000"
                             class="form-control telefone"
-                            placeholder="Telefone do Cliente"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Telefone do Cliente"
+                            placeholder="Telefone"
                             required />
                     </section>
                     <section class="col-md-3 mt-2">
@@ -64,9 +67,10 @@
                         <div>
                             <label id="lblTipoPessoa" class="form-label">Tipo de Pessoa:</label>
                             <select id="ddlPessoa" runat="server" clientidmode="Static"
-                                class="form-select">
-                                <option>Física</option>
-                                <option>Jurídica</option>
+                                class="form-select"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Selecione o tipo de Pessoa">
+                                <option value="0">Física</option>
+                                <option value="1">Jurídica</option>
                             </select>
                         </div>
                     </section>
@@ -76,9 +80,61 @@
                             <input id="txtDocumento" runat="server"
                                 type="text" class="form-control documento"
                                 data-mask="000.000.000-00" data-mask-reverse="true"
-                                placeholder="CPF do Cliente" />
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Insira o CPF ou o CNPJ do Cliente"
+                                placeholder="CPF/CNPJ" required/>
                         </div>
                     </section>
+                    <section class="col-md-6 mt-2">
+                        <div class="row">
+                            <section class="col-6">
+                                <label id="lblInscricaoEstadual" class="form-label">Inscrição Estadual:</label>
+                            </section>
+                            <section class="col-6">
+                                <input type="checkbox"
+                                    id="chkIsento" runat="server" clientidmode="Static"
+                                    class="form-check-input chk" name="chkIsento"/>
+                                <label id="lblIsento" class="form-label">Isento</label>
+                            </section>
+                        </div>
+                        <input id="txtInscricaoEstadual" runat="server"
+                            type="text" data-mask="000.000.000-000"
+                            class="form-control"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Inscrição Estadual do Cliente, Selecionar Isento caso assim for."
+                            placeholder="Inscrição Estadual"
+                            required />
+                    </section>
+                    <div id="collapsePessoaFisica" class="collapse show">
+                        <div class="row">
+                            <section class="col-md-3 mt-2">
+                                <div>
+                                    <label id="lblGenero" class="form-label">Gênero:</label>
+                                    <select id="ddlGenero" runat="server" clientidmode="Static"
+                                        class="form-select"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Selecione o gênero do Cliente">
+                                        <option value="0">Masculino</option>
+                                        <option value="1">Feminino</option>
+                                        <option value="2">Outro</option>
+                                    </select>
+                                </div>
+                            </section>
+                            <section class="col-md-3 mt-2">
+                                <div>
+                                    <label id="lblDtNasicmento" class="form-label">Data de Nascimento:</label>
+                                </div>
+                                <input id="txtDataNascimento" runat="server"
+                                    type="date" class="form-control" />
+                            </section>
+                            <section class="col-md-3 mt-2">
+                                <div>
+                                    <label class="form-label"></label>
+                                </div>
+                                <div>
+                                    <asp:Button ID="btnCadastrar" runat="server"
+                                        type="button" class="btn btn-primary" Text="Adicionar" OnClick="btnCadastrar_Click" />
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
