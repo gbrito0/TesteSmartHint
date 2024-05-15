@@ -13,5 +13,9 @@ namespace TesteSmartHint.WebApp
         {
 
         }
+        protected void grvCompradores_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            
+        }
     }
 }
