@@ -15,6 +15,51 @@ namespace TesteSmartHint.WebApp
     {
 
         /// <summary>
+        /// chkNome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkNome;
+
+        /// <summary>
+        /// chkEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkEmail;
+
+        /// <summary>
+        /// chkTelefone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkTelefone;
+
+        /// <summary>
+        /// chkDtCadastro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkDtCadastro;
+
+        /// <summary>
+        /// chkBloqueado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkBloqueado;
+
+        /// <summary>
         /// divPesquisa control.
         /// </summary>
         /// <remarks>
@@ -39,7 +84,7 @@ namespace TesteSmartHint.WebApp
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEmail;
 
         /// <summary>
         /// txtTelefone control.
@@ -69,13 +114,13 @@ namespace TesteSmartHint.WebApp
         protected global::System.Web.UI.HtmlControls.HtmlSelect ddlBloqueado;
 
         /// <summary>
-        /// btnAplicarFiltros control.
+        /// btnFiltraCampos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnAplicarFiltros;
+        protected global::System.Web.UI.WebControls.Button btnFiltraCampos;
 
         /// <summary>
         /// btnLimparFiltros control.

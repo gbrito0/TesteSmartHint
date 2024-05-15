@@ -64,7 +64,8 @@ namespace TesteSmartHint.Application.Services
 
         public async Task<IEnumerable<PessoaDTO>> GetByFiltro(Dictionary<string, string> filtros)
         {            
-            filtros = filtros.ToDictionary(obj => obj.Key.ToLower(), obj => obj.Value);
+            filtros = filtros.ToDictionary(obj => obj.Key.ToLower(), obj => obj.Value);            
+
             var retorno = await _pessoaRepository.GetByFiltro(filtros);            
             return _mapper.Map<IEnumerable<PessoaDTO>>(retorno); 
         }

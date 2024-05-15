@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Dapper;
 using TesteSmartHint.Domain.Entities;
@@ -138,7 +139,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
             if (filtro.TryGetValue("telefone", out valor))
             {
                 sql.Append(" AND Telefone = @Telefone");
-                parametros.Add("Telefone", valor);
+                parametros.Add("Telefone", Regex.Replace(valor, @"[^\d]",""));                    
             }
             if (filtro.TryGetValue("bloqueado", out valor))
             {

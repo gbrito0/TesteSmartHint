@@ -18,26 +18,36 @@
                 aria-expanded="false" aria-controls="collapsePesquisa">
                 Filtrar
             </button>
-            <div id="collapsePesquisa" class="collapse show">
+            <div id="collapsePesquisa" class="collapse">
                 <div id="divFiltros" class="row p-2">
                     <div class="col-sm-2">
-                        <input type="checkbox" class="form-check-input" id="chkNome" name="chkNome" checked>
+                        <input type="checkbox"
+                            id="chkNome" runat="server"
+                            class="form-check-input chk" name="chkNome" checked>
                         <label class="form-check-label" for="chkNome">Nome/Razão Social</label>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="form-check-input" id="chkEmail" name="chkEmail" checked>
+                        <input type="checkbox"
+                            id="chkEmail" runat="server" clientidmode="Static"
+                            class="form-check-input chk" name="chkEmail" checked>
                         <label class="form-check-label" for="chkEmail">Email</label>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="form-check-input" id="chkTelefone" name="chkTelefone" checked />
+                        <input type="checkbox"
+                            id="chkTelefone" runat="server" clientidmode="Static"
+                            class="form-check-input chk" name="chkTelefone" checked />
                         <label class="form-check-label" for="chkTelefone">Telefone</label>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="form-check-input" id="chkDtCadastro" name="chkDtCadastro" checked />
+                        <input type="checkbox"
+                            id="chkDtCadastro" runat="server" clientidmode="Static"
+                            class="form-check-input chk" name="chkDtCadastro" checked />
                         <label class="form-check-label" for="chkDtCadastro">Data do Cadastro</label>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="form-check-input" id="chkBloqueado" name="chkBloqueado" checked />
+                        <input type="checkbox"
+                            id="chkBloqueado" runat="server" clientidmode="Static"
+                            class="form-check-input chk" name="chkBloqueado" checked />
                         <label class="form-check-label" for="chkBloqueado">Bloqueado</label>
                     </div>
                 </div>
@@ -57,8 +67,8 @@
                                 <label id="lblEmail" class="form-label">Email:</label>
                             </div>
                             <input id="txtEmail" runat="server"
-                                type="email" maxlength="150"
-                                class="form-control "
+                                type="text" maxlength="150"
+                                class="form-control"
                                 placeholder="E-mail do Cliente" />
                         </section>
                         <section class="col-md-3 mt-2">
@@ -68,7 +78,7 @@
                             <input id="txtTelefone" runat="server"
                                 type="text" data-mask="(00) 00000-0000"
                                 class="form-control telefone"
-                                placeholder="Telefone do Cliente"/>
+                                placeholder="Telefone do Cliente" />
                         </section>
                         <section class="col-md-3 mt-2">
                             <div>
@@ -81,20 +91,18 @@
                             <div>
                                 <label id="lblBloqueado" class="form-label">Cliente Bloqueado:</label>
                                 <select id="ddlBloqueado" runat="server"
-                                    class="form-select">
-                                    <option>Sim</option>
-                                    <option>Não</option>
+                                    class="form-select cbo">
+                                    <option value="0">Nao</option>
+                                    <option value="1">Sim</option>
                                 </select>
                             </div>
                         </section>
                         <section class="col-md-10 mt-2">
-                            <button id="btnAplicarFiltros" runat="server"
-                                type="button" class="btn btn-primary"
-                                data-bs-toggle="collapse" data-bs-target="#collapsePesquisa"
-                                aria-expanded="false" aria-controls="collapsePesquisa">
-                                Aplicar Filtros</button>
+                            <asp:Button ID="btnFiltraCampos" runat="server"
+                                class="btn btn-primary" Text="Aplicar Filtros"
+                                OnClientClick="collapseAll();return true;" OnClick="btnFiltraCampos_Click" /> 
                             <button id="btnLimparFiltros" runat="server"
-                                type="button" class="btn btn-primary">
+                                type="button" class="btn btn-primary" onclick="limparCampos();">
                                 Limpar Filtros</button>
                         </section>
                     </div>
@@ -137,12 +145,13 @@
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Bloqueado">
                                     <ItemTemplate>
-                                        <%#Eval("Bloqueado") %>
+                                        <asp:CheckBox ID="chkGridBloqueado" runat="server" Checked='<%# Eval("Bloqueado") %>' />
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="Ações">
+                                <asp:TemplateField HeaderText="Ação">
                                     <ItemTemplate>
-                                        <%#Eval("Acao") %>
+                                        <asp:Button ID="btnGridEditar" runat="server"
+                                            class="btn btn-primary" Text="Editar"/>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                             </Columns>

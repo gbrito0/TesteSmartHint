@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs" Inherits="TesteSmartHint.WebApp.Secure.Cadastro" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <script>
+        $(document).ready(function () {
+            //bloqueiaCampos();//inicia bloqueando campos
+        })
+    </script>
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
             <h1 id="aspnetTitle">Teste SmartHint - Cadastro</h1>
@@ -58,7 +63,7 @@
                     <section class="col-md-3 mt-2">
                         <div>
                             <label id="lblTipoPessoa" class="form-label">Tipo de Pessoa:</label>
-                            <select id="ddlPessoa" runat="server" ClientIdMode="Static"
+                            <select id="ddlPessoa" runat="server" clientidmode="Static"
                                 class="form-select">
                                 <option>Física</option>
                                 <option>Jurídica</option>
@@ -74,7 +79,7 @@
                                 placeholder="CPF do Cliente" />
                         </div>
                     </section>
-                </div>                
+                </div>
             </div>
         </div>
     </main>
