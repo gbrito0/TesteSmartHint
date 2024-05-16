@@ -148,9 +148,17 @@ namespace TesteSmartHint.Infrastructure.Repositories
                 parametros.Add("Bloqueado",valor);
             }
 
+            if(filtro.TryGetValue("dtinicio", out valor))
+            {
+                sql.Append(" AND date(dtCadastro) >= @dtInicio");
+                parametros.Add("dtInicio", Convert.ToDateTime(valor).ToString("yyyy/MM/dd"));
+            }
+            if (filtro.TryGetValue("dtfim", out valor))
+            {
+                sql.Append(" AND date(dtCadastro) <= @dtFim");
+                parametros.Add("dtFim", Convert.ToDateTime(valor).ToString("yyyy/MM/dd"));
+            }
             return sql.ToString();
-
-            //DATAS
         }
     }
 }

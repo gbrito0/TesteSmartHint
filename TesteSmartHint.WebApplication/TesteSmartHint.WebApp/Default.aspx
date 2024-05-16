@@ -28,7 +28,7 @@
                     </div>
                     <div class="col-sm-2">
                         <input type="checkbox"
-                            id="chkEmail" runat="server" 
+                            id="chkEmail" runat="server"
                             class="form-check-input chk" name="chkEmail" checked>
                         <label class="form-check-label" for="chkEmail">Email</label>
                     </div>
@@ -82,10 +82,12 @@
                         </section>
                         <section class="col-md-3 mt-2">
                             <div>
-                                <label id="lblDataCadastro" class="form-label">Data do Cadastro:</label>
+                                <label id="lblDtCadastro" class="form-label">Data do Cadastro:</label>
                             </div>
-                            <input id="txtDataCadastro" runat="server"
-                                type="date" class="form-control" />
+                            <input id="daterange"
+                                name="daterange" type="text" class="form-control" />
+                            <input id="txtDataCadastro" runat="server" clientidmode="Static"
+                                type="hidden" class="form-control" />
                         </section>
                         <section class="col-md-6 mt-2">
                             <div>
@@ -113,7 +115,7 @@
             <asp:UpdatePanel ID="upGrid" runat="server">
                 <ContentTemplate>
                     <div>
-                        <asp:GridView ID="grvCompradores" runat="server" clientidmode="Static"
+                        <asp:GridView ID="grvCompradores" runat="server" ClientIDMode="Static"
                             AutoGenerateColumns="false"
                             AllowPaging="true"
                             PageSize="20"
@@ -131,7 +133,7 @@
                                         </div>
                                     </HeaderTemplate>
                                     <ItemTemplate>
-                                        <asp:CheckBox ID="chkSelecionar" runat="server" class="grvchk" clientidmode="Static"/>
+                                        <asp:CheckBox ID="chkSelecionar" runat="server" class="grvchk" ClientIDMode="Static" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Nome/Razão Social">
@@ -172,4 +174,27 @@
             </asp:UpdatePanel>
         </div>
     </main>
+    <script type="text/javascript">
+
+        //Configura daterange picker
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                showDropdowns: true,
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10),
+                locale: {
+                    format: 'DD/MM/YYYY'
+                }
+            });
+            $('#daterange').on('apply.daterangepicker', function (ev, picker) {
+                $('#txtDataCadastro').val($('#daterange').val());
+            });
+        });
+
+        //Evento para pesquisar ao remover filtro
+        $(".form-check-input, .chk").change(function () {
+            if (this.checked == false)
+                $("[id*=btnFiltraCampos]").click();
+        });
+    </script>
 </asp:Content>

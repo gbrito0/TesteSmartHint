@@ -1,4 +1,10 @@
-﻿//OnChange ddlPessoa
+﻿
+$('#daterange').on('apply.daterangepicker', function (ev, picker) {
+    console.log(picker.startDate.format('YYYY-MM-DD'));
+    console.log(picker.endDate.format('YYYY-MM-DD'));
+});
+
+//OnChange ddlPessoa
 $('#ddlPessoa').change(function () {
     collapseCadastro();    
 });

@@ -50,9 +50,13 @@ namespace TesteSmartHint.WebApp
             if (chkEmail.Checked && !String.IsNullOrEmpty(txtEmail.Value))
                 dict.Add("email", txtEmail.Value.ToString());
             if (chkDtCadastro.Checked && !String.IsNullOrEmpty(txtDataCadastro.Value))
-                dict.Add("dtCadastro", txtDataCadastro.ToString());
+            {
+                var datas = txtDataCadastro.Value.Split('-');
+                dict.Add("dtInicio", datas[0].Trim());
+                dict.Add("dtFim", datas[1].Trim());                
+            }                
             if (chkBloqueado.Checked)
-                dict.Add("bloqueado", ddlBloqueado.Items[ddlBloqueado.SelectedIndex].Value.ToString());
+                dict.Add("bloqueado", ddlBloqueado.Items[ddlBloqueado.SelectedIndex].Value.ToString());            
 
             return dict;
         }
