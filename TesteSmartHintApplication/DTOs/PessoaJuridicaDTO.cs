@@ -26,6 +26,6 @@ namespace TesteSmartHint.Application.DTOs
         [Required(ErrorMessage = "CNPJ é obrigatório")]
         [MinLength(14)]
         [MaxLength(14)]
-        public string CNPJ { get; set; }
+        public string CNPJ { get; set; }       
     }
 }

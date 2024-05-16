@@ -4,8 +4,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using TesteSmartHint.WebApp.DTO;
 using TesteSmartHint.WebApp.Mapeamentos;
 using TesteSmartHint.WebApp.Models;
@@ -73,6 +75,7 @@ namespace TesteSmartHint.WebApp.BLL
         {
             var mapper = AutoMapperConfig.InicializarProfiles();
             var pessoaDTO = mapper.Map<PessoaDTO>(pessoa);
+            pessoaDTO.InscricaoEstadual = pessoaDTO.InscricaoEstadual == null ? null : Regex.Replace(pessoaDTO.InscricaoEstadual, @"[^\d]", "");
 
             var json = JsonConvert.SerializeObject(pessoaDTO);
             StringContent jsonContent = new StringContent(json, Encoding.UTF8, "application/json");

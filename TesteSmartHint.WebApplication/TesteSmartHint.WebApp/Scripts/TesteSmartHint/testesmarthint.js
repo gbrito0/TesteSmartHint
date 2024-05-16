@@ -1,15 +1,6 @@
 ﻿//OnChange ddlPessoa
 $('#ddlPessoa').change(function () {
-    $('#txtDocumento')[0].value = "";
-    $('#txtDocumento').unmask();
-    if ($('#ddlPessoa')[0].value == 0) {
-        $('#txtDocumento').mask('000.000.000-00', { reverse: true }); //CPF
-        collapseAll();
-    }
-    else {
-        $('#txtDocumento').mask('00.000.000/0000-00', { reverse: true }); //CNPJ
-        collapseAll();
-    }
+    collapseCadastro();    
 });
 
 //OnChange chkIsento
@@ -51,6 +42,21 @@ function limparCampos() {
     }
     return false;
 };
+function collapseCadastro() {
+    $('#txtDocumento')[0].value = "";
+    $('#txtDocumento').unmask();
+    if ($('#ddlPessoa')[0].value == 0) {
+        $('#txtDocumento').mask('000.000.000-00', { reverse: true }); //CPF        
+        $('#txtDataNascimento').attr('required', true);
+        collapseAll();
+    }
+    else {
+        $('#txtDataNascimento')[0].value = ""
+        $('#txtDataNascimento').removeAttr('required');
+        $('#txtDocumento').mask('00.000.000/0000-00', { reverse: true }); //CNPJ        
+        collapseAll();
+    }
+}
 function collapseAll() {
     var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
     var collapseList = collapseElementList.map(function (collapseEl) {

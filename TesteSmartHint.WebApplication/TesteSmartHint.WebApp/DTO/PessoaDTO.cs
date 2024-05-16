@@ -20,13 +20,8 @@ namespace TesteSmartHint.WebApp.DTO
         }
 
         public DateTime dtCadastro { get; set; }
-        public bool Bloqueado { get; set; }
-
-        string _inscricaoEstadual;
-        public string InscricaoEstadual
-        {
-            get { return _inscricaoEstadual; }
-            set { _inscricaoEstadual = _inscricaoEstadual != null? Regex.Replace(value, @"[^\d]", "") : null; } //retorna apenas numeros
-        }
+        public bool Bloqueado { get; set; }        
+        public string InscricaoEstadual { get; set; }
+        public string Senha { get; set; }
     }
 }

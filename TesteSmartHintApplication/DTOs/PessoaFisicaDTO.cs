@@ -33,7 +33,7 @@ namespace TesteSmartHint.Application.DTOs
         public string Genero { get; set; }
 
         [Required(ErrorMessage = "Data de Nascimento é obrigatório")]
-        public DateTime dtNascimento { get; set; }
+        public DateTime dtNascimento { get; set; }       
 
     }
 }

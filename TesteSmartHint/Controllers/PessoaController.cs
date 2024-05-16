@@ -79,15 +79,6 @@ namespace TesteSmartHint.API.Controllers
         [HttpGet("GetByFiltros")]
         public async Task<IActionResult> GetByFiltros([FromQuery] Dictionary<string, string> filtros)
         {
-            //http://localhost/api/products?filter={"name":"Test","price":10}
-            //var filterDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(filtros);
-            /*
-                         * {
-              "Nome": "guilherme",
-              "Telefone": "11987367440"
-            }
-             */
-
             if (filtros == null)
                 return BadRequest();
             

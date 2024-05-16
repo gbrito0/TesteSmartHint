@@ -7,6 +7,8 @@ namespace TesteSmartHint.WebApp.Models
 {
     public class PessoaJuridica : Pessoa
     {
+        public PessoaJuridica() { }
+
         public string CNPJ;
     }
 }

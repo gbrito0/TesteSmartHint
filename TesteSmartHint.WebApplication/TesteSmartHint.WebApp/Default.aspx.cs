@@ -36,7 +36,7 @@ namespace TesteSmartHint.WebApp
         protected void btnFiltraCampos_Click(object sender, EventArgs e)
         {
             var pessoasByFiltro = PessoaBLL.RetornaPessoasByFiltro(_client, montaFiltros());
-            CarregaGrid(pessoasByFiltro);                        
+            CarregaGrid(pessoasByFiltro);
         }
 
         private IDictionary<string, string> montaFiltros()
@@ -45,10 +45,10 @@ namespace TesteSmartHint.WebApp
 
             if (chkNome.Checked && !String.IsNullOrEmpty(txtNome.Value))
                 dict.Add("nome", txtNome.Value.ToString());
-            if(chkTelefone.Checked && !String.IsNullOrEmpty(txtTelefone.Value))
+            if (chkTelefone.Checked && !String.IsNullOrEmpty(txtTelefone.Value))
                 dict.Add("telefone", txtTelefone.Value.ToString());
-            if(chkEmail.Checked && !String.IsNullOrEmpty(txtEmail.Value))
-                dict.Add("email",txtEmail.Value.ToString());
+            if (chkEmail.Checked && !String.IsNullOrEmpty(txtEmail.Value))
+                dict.Add("email", txtEmail.Value.ToString());
             if (chkDtCadastro.Checked && !String.IsNullOrEmpty(txtDataCadastro.Value))
                 dict.Add("dtCadastro", txtDataCadastro.ToString());
             if (chkBloqueado.Checked)
@@ -59,8 +59,11 @@ namespace TesteSmartHint.WebApp
 
         private void CarregaGrid(List<Pessoa> pessoas)
         {
-            if(pessoas.Count == 0) return;
-            grvCompradores.DataSource = pessoas;
+            if (pessoas == null || pessoas.Count == 0)
+                grvCompradores.DataSource = null;
+            else
+                grvCompradores.DataSource = pessoas;
+
             grvCompradores.DataBind();
         }
     }

@@ -32,6 +32,8 @@ namespace TesteSmartHint.WebApp.Secure
 
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
+            bool inserido = false;
+
             var mensagem = ValidaCampos(txtEmail.Value, txtDocumento.Value, txtInscricaoEstadual.Value);
             if (mensagem != string.Empty)
             {
@@ -44,33 +46,37 @@ namespace TesteSmartHint.WebApp.Secure
                 Nome = txtNome.Value,
                 Email = txtEmail.Value,
                 Telefone = txtTelefone.Value,
-                Bloqueado = false,
-                InscricaoEstadual = txtInscricaoEstadual.Value
+                Bloqueado = chkBloqueado.Checked,
+                InscricaoEstadual = txtInscricaoEstadual.Value,
+                Senha = txtSenha.Value
             });
 
-            if (ddlPessoa.Value == "0")
+
+            if (ddlPessoa.Value == "0")//Cadastra PF
             {
-                var pf = PessoaFisicaBLL.CadastraPessoaFisica(_client, new PessoaFisica
+                inserido = PessoaFisicaBLL.CadastraPessoaFisica(_client, new PessoaFisica
                 {
-                    Id = obj.Id,                    
+                    Id = obj.Id,
                     CPF = txtDocumento.Value,
                     Genero = ddlGenero.Items[ddlGenero.SelectedIndex].Text,
                     dtNascimento = DateTime.ParseExact(txtDataNascimento.Value, "yyyy-MM-dd",
                                        System.Globalization.CultureInfo.InvariantCulture)
                 });
             }
-            else if (ddlPessoa.Value == "1")
+            else if (ddlPessoa.Value == "1")//Cadastra PJ
             {
-                var pf = PessoaJuridicaBLL.CadastraPessoaJuridica(_client, new PessoaJuridica
+                inserido = PessoaJuridicaBLL.CadastraPessoaJuridica(_client, new PessoaJuridica
                 {
                     Id = obj.Id,
                     CNPJ = txtDocumento.Value
                 });
             }
+
+            if (inserido)
+                Response.Redirect("/Default.aspx");
         }
         private string ValidaCampos(string email, string documento, string inscricaoEstadual)
         {
-
             if (!PessoaBLL.ValidaEmail(_client, email))
                 return ("Este e-mail já está cadastrado para outro Cliente");
             if (ddlPessoa.Value == "0" && !PessoaFisicaBLL.ValidaCPF(_client, documento))

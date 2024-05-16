@@ -25,7 +25,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
         public async Task<Pessoa> GetById(int id)
         {
             var query = string.Format(@"
-                                        SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado
+                                        SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado, InscricaoEstadual, Senha
                                         FROM Pessoa
                                         WHERE Pessoa.ID = {0}", id);
             using (var connection = _context.CreateConnection())
@@ -36,7 +36,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
         }
         public async Task<IEnumerable<Pessoa>> GetAll()
         {
-            var query = @"SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado FROM Pessoa";
+            var query = @"SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado, InscricaoEstadual, Senha FROM Pessoa";
             using (var connection = _context.CreateConnection())
             {
                 var pessoa = await connection.QueryAsync<Pessoa>(query);
@@ -48,9 +48,9 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
             var sql =
                 @"INSERT INTO Pessoa
-                        (Nome, Email, Telefone, dtCadastro, Bloqueado)
+                        (Nome, Email, Telefone, dtCadastro, Bloqueado, InscricaoEstadual, Senha)
                 VALUES 
-                        (@Nome, @Email, @Telefone, @dtCadastro, @Bloqueado);
+                        (@Nome, @Email, @Telefone, @dtCadastro, @Bloqueado, @InscricaoEstadual, @Senha);
                 SELECT LAST_INSERT_ID()";
 
             var parameters = new DynamicParameters();
@@ -59,7 +59,8 @@ namespace TesteSmartHint.Infrastructure.Repositories
             parameters.Add("Telefone", pessoa.Telefone, DbType.String);
             parameters.Add("dtCadastro", DateTime.Now, DbType.DateTime);
             parameters.Add("Bloqueado", pessoa.Bloqueado == true ? 1 : 0, DbType.Boolean);
-            parameters.Add("InscricaoEstadual", pessoa.InscricaoEstadual, DbType.Int64);
+            parameters.Add("InscricaoEstadual", pessoa.InscricaoEstadual, DbType.String);
+            parameters.Add("Senha", pessoa.Senha, DbType.String);
 
             using (var connection = _context.CreateConnection())
             {
@@ -81,9 +82,9 @@ namespace TesteSmartHint.Infrastructure.Repositories
         {
             var query = string.Format(@"  
                             UPDATE Pessoa SET
-                            Nome = '{1}', Email = '{2}', Telefone = '{3}', Bloqueado = {4}
+                            Nome = '{1}', Email = '{2}', Telefone = '{3}', Bloqueado = {4}, InscricaoEstadual = {5}, Senha = {6}
                             WHERE ID = {0}",
-                            pessoa.Id, pessoa.Nome, pessoa.Email, pessoa.Telefone, pessoa.Bloqueado);
+                            pessoa.Id, pessoa.Nome, pessoa.Email, pessoa.Telefone, pessoa.Bloqueado, pessoa.InscricaoEstadual, pessoa.Senha);
             using (var connection = _context.CreateConnection())
             {
                 var pf = await connection.QueryFirstOrDefaultAsync<PessoaFisica>(query);
@@ -103,7 +104,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
 
         public async Task<IEnumerable<Pessoa>> GetByFiltro(IDictionary<string, string> filtros)
         {
-            string query = "SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado FROM Pessoa WHERE 1 = 1";
+            string query = "SELECT Id, Nome, Email, Telefone, dtCadastro, Bloqueado, InscricaoEstadual, Senha FROM Pessoa WHERE 1 = 1";
             var parametros = new DynamicParameters();            
             query = MontaQueryFiltros(query, filtros, ref parametros);
 

@@ -6,9 +6,10 @@
     <script>
         $(document).ready(function () {
             $("#txtDataCadastro")[0].value = new Date().toLocaleDateString("pt-BR");
+            if ($("#ddlPessoa").val() == 1)
+                collapseCadastro();
         })
     </script>
-
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
             <h1 id="aspnetTitle">Teste SmartHint - Cadastro</h1>
@@ -132,8 +133,8 @@
                                 <div>
                                     <label id="lblDtNasicmento" class="form-label">Data de Nascimento:</label>
                                 </div>
-                                <input id="txtDataNascimento" runat="server"
-                                    type="date" class="form-control" />
+                                <input id="txtDataNascimento" runat="server" clientidmode="Static"
+                                    type="date" class="form-control" required/>
                             </section>
                         </div>
                     </div>

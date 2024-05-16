@@ -31,5 +31,6 @@ namespace TesteSmartHint.Application.DTOs
 
         public bool Bloqueado { get; set; }
         public long? InscricaoEstadual { get; set; }
+        public string Senha { get; set; }   
     }
 }
