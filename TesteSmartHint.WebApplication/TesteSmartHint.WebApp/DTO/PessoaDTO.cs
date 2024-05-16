@@ -26,7 +26,7 @@ namespace TesteSmartHint.WebApp.DTO
         public string InscricaoEstadual
         {
             get { return _inscricaoEstadual; }
-            set { _inscricaoEstadual = Regex.Replace(value, @"[^\d]", ""); } //retorna apenas numeros
+            set { _inscricaoEstadual = _inscricaoEstadual != null? Regex.Replace(value, @"[^\d]", "") : null; } //retorna apenas numeros
         }
     }
 }

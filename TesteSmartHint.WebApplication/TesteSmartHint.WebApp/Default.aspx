@@ -24,11 +24,11 @@
                         <input type="checkbox"
                             id="chkNome" runat="server"
                             class="form-check-input chk" name="chkNome" checked>
-                        <label class="form-check-label" for="chkNome">Nome/Razão Social</label>
+                        <label class="form-check-label">Nome/Razão Social</label>
                     </div>
                     <div class="col-sm-2">
                         <input type="checkbox"
-                            id="chkEmail" runat="server" clientidmode="Static"
+                            id="chkEmail" runat="server" 
                             class="form-check-input chk" name="chkEmail" checked>
                         <label class="form-check-label" for="chkEmail">Email</label>
                     </div>
@@ -100,7 +100,7 @@
                         <section class="col-md-10 mt-2">
                             <asp:Button ID="btnFiltraCampos" runat="server"
                                 class="btn btn-primary" Text="Aplicar Filtros"
-                                OnClientClick="collapseAll();return true;" OnClick="btnFiltraCampos_Click" /> 
+                                OnClientClick="collapseAll();return true;" OnClick="btnFiltraCampos_Click" />
                             <button id="btnLimparFiltros" runat="server"
                                 type="button" class="btn btn-primary" onclick="limparCampos();">
                                 Limpar Filtros</button>
@@ -113,7 +113,7 @@
             <asp:UpdatePanel ID="upGrid" runat="server">
                 <ContentTemplate>
                     <div>
-                        <asp:GridView ID="grvCompradores" runat="server"
+                        <asp:GridView ID="grvCompradores" runat="server" clientidmode="Static"
                             AutoGenerateColumns="false"
                             AllowPaging="true"
                             PageSize="20"
@@ -123,6 +123,17 @@
                             PagerStyle-CssClass="pagination"
                             OnPageIndexChanging="grvCompradores_PageIndexChanging">
                             <Columns>
+                                <asp:TemplateField ItemStyle-Width="1%">
+                                    <HeaderTemplate>
+                                        <div style="margin-left: 7px;">
+                                            <input id="chkAllItems" onclick="selectAllCheckGrid(this)"
+                                                runat="server" type="checkbox" />
+                                        </div>
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:CheckBox ID="chkSelecionar" runat="server" class="grvchk" clientidmode="Static"/>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Nome/Razão Social">
                                     <ItemTemplate>
                                         <%#Eval("Nome") %>
@@ -151,7 +162,7 @@
                                 <asp:TemplateField HeaderText="Ação">
                                     <ItemTemplate>
                                         <asp:Button ID="btnGridEditar" runat="server"
-                                            class="btn btn-primary" Text="Editar"/>
+                                            class="btn btn-primary" Text="Editar" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                             </Columns>

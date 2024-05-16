@@ -51,13 +51,13 @@ namespace TesteSmartHint.WebApp.Secure
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtTelefone;
 
         /// <summary>
-        /// txtDataCadastro control.
+        /// chkBloqueado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtDataCadastro;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkBloqueado;
 
         /// <summary>
         /// divInformacoesPessoais control.
@@ -121,6 +121,24 @@ namespace TesteSmartHint.WebApp.Secure
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtDataNascimento;
+
+        /// <summary>
+        /// txtSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtSenha;
+
+        /// <summary>
+        /// txtConfirmarSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtConfirmarSenha;
 
         /// <summary>
         /// btnCadastrar control.
