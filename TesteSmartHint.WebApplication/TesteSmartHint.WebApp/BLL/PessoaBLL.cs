@@ -75,7 +75,7 @@ namespace TesteSmartHint.WebApp.BLL
         {
             var mapper = AutoMapperConfig.InicializarProfiles();
             var pessoaDTO = mapper.Map<PessoaDTO>(pessoa);
-            pessoaDTO.InscricaoEstadual = pessoaDTO.InscricaoEstadual == null ? null : Regex.Replace(pessoaDTO.InscricaoEstadual, @"[^\d]", "");
+            pessoaDTO.InscricaoEstadual = string.IsNullOrEmpty(pessoaDTO.InscricaoEstadual) ? null : Regex.Replace(pessoaDTO.InscricaoEstadual, @"[^\d]", "");
 
             var json = JsonConvert.SerializeObject(pessoaDTO);
             StringContent jsonContent = new StringContent(json, Encoding.UTF8, "application/json");

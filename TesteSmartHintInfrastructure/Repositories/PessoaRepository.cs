@@ -59,7 +59,7 @@ namespace TesteSmartHint.Infrastructure.Repositories
             parameters.Add("Telefone", pessoa.Telefone, DbType.String);
             parameters.Add("dtCadastro", DateTime.Now, DbType.DateTime);
             parameters.Add("Bloqueado", pessoa.Bloqueado == true ? 1 : 0, DbType.Boolean);
-            parameters.Add("InscricaoEstadual", pessoa.InscricaoEstadual, DbType.String);
+            parameters.Add("InscricaoEstadual", pessoa.InscricaoEstadual > 0 ? pessoa.InscricaoEstadual : null, DbType.String);
             parameters.Add("Senha", pessoa.Senha, DbType.String);
 
             using (var connection = _context.CreateConnection())
